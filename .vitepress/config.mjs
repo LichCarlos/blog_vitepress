@@ -7,19 +7,15 @@ export default defineConfig({
   description: "A VitePress Site",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
-    [
-      "script",
-      {},
-      `window._hmt = widows._hmt || [];
+    ['script', {}, `
+      var _hmt = _hmt || [];
       (function() {
         var hm = document.createElement("script");
         hm.src = "https://hm.baidu.com/hm.js?5ee3b374b8cb5b53c3129568db193ace";
-        var s = document.getElementsByTagName("script")[0]; 
+        var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
-        })();
-      `
-
-    ]
+      })();
+    `]
   ],
   themeConfig: {
     nav: nav,

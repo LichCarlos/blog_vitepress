@@ -18,12 +18,6 @@ export default {
         }
       }
     };
-    onMounted(() => {
-      const busuanziScript = document.createElement('script');
-      busuanziScript.async = true;
-      busuanziScript.src = 'https://cdn.jsdelivr.net/npm/busuanzi@2.3/busuanzi.pure.mini.js';
-      document.body.appendChild(busuanziScript);
-    });
   },
   setup() {
     const route = useRoute();
