@@ -69,5 +69,6 @@ export default defineConfig({
       infoLabel: '信息',
       detai1sLabel: '详细信息',
     }
-  }
+  },
+  cleanUrls: true,
 })

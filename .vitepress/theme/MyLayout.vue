@@ -30,10 +30,10 @@ watch(isDark, (dark) => {
       <div style="margin-top: 24px">
         <Giscus
           :key="page.filePath"
-          repo="ghostchan/HappyfeDiscus"
-          repo-id="R_kgDONUV0Sg"
+          repo="LichCarlos/blog_vitepress"
+          repo-id="R_kgDONsH0pA"
           category="Announcements"
-          category-id="DIC_kwDONUV0Ss4Ckk62"
+          category-id="DIC_kwDONsH0pM4CmJWv"
           mapping="title"
           strict="0"
           reactions-enabled="1"
