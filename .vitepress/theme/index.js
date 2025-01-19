@@ -1,23 +1,13 @@
-// index.js
-// import DefaultTheme from 'vitepress/theme'
-// import './custom.css'
-
-// export default DefaultTheme
-
-// .vitepress/theme/index.js
-
-// 可以直接在主题入口导入 Vue 文件
-// VitePress 已预先配置 @vitejs/plugin-vue
 import Layout from './MyLayout.vue';
 import confetti from "./confetti.vue";
 import VisitorPanel from "./VisitorPanel.vue";
-
+import busuanzi from "busuanzi.pure.js";
 import mediumZoom from "medium-zoom";
 import { onMounted, watch, nextTick } from "vue";
 import { useRoute } from "vitepress";
 export default {
   Layout,
-  enhanceApp: ({ app, router }) => {
+  enhanceApp: ({ app, router, siteData }) => {
     app.component("confetti", confetti);
     app.component("VisitorPanel", VisitorPanel);
     router.onBeforeRouteChange = (to) => {
@@ -28,6 +18,12 @@ export default {
         }
       }
     };
+    onMounted(() => {
+      const busuanziScript = document.createElement('script');
+      busuanziScript.async = true;
+      busuanziScript.src = 'https://cdn.jsdelivr.net/npm/busuanzi@2.3/busuanzi.pure.mini.js';
+      document.body.appendChild(busuanziScript);
+    });
   },
   setup() {
     const route = useRoute();

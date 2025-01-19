@@ -8,12 +8,11 @@
           <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
         </span>
         <img
-          src="/.vitepress/theme/戳戳戳.jpg"
-          alt="heart"
+
           class="heart-img"
           width="50"
           height="50"
-          @click="onLinkUmiHandle"
+         
         />
         <span class="text">
           本站访客数
@@ -24,16 +23,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { inBrowser } from "vitepress";
-const onLinkUmiHandle = () => {
-  if (inBrowser) {
-    window.open(
-      "https://us.umami.is/share/Y2BYxCAm7R0DG2Xi/carlosme.fun",
-      "_blank"
-    );
-  }
-};
+<script setup>
+
 </script>
 
 <style scoped>
