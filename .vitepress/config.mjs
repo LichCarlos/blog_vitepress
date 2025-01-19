@@ -2,13 +2,26 @@ import { defineConfig } from 'vitepress'
 import sidebar from './sidebar.mjs'
 import nav from './nav.mjs'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Carlos博客",
   description: "A VitePress Site",
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [
+    ["link", { rel: "icon", href: "/favicon.ico" }],
+    [
+      "script",
+      {},
+      `window._hmt = widows._hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?5ee3b374b8cb5b53c3129568db193ace";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+      `
+
+    ]
+  ],
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: nav,
     sidebar: sidebar,
 
