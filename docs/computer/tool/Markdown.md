@@ -428,8 +428,8 @@ Markdown 图片语法格式如下
 图二
 ![logo图标](./assets/logo.png "logo")
 
-图三
-![logo图标](./assets/lgo.png "logo")
+图三(使用错误路径会导致部署失败顾用截图代替，实际效果为截图的图片加载失败)
+![logo图标](./assets/err.png "logo")
 
 #### 网络图片
 当然，你也可以像网址那样对图片网址使用变量
