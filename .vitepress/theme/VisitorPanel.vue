@@ -36,10 +36,7 @@
   margin-right: auto;
 }
 
-.heart-img {
-  border-radius: 4px;
-  cursor: pointer;
-}
+
 
 .grid {
   font-weight: 500;
