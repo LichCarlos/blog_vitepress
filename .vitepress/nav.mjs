@@ -6,13 +6,25 @@ export default [
   {
     text: '计算机基础',
     items: [
-      // {
-      //   text: '油猴教程',
-      //   link: '/computer/tampermonkey/chinese-doc',
-      // },
       {
         text: '计算机网络',
         link: '/computer/net/index.md',
+      },
+      {
+        text: '操作系统',
+        link: '/computer/OS/index.md',
+      },
+      {
+        text: '计算机组成原理',
+        link: '/computer/principle/index.md',
+      },
+      {
+        text: '数据结构',
+        link: '/computer/dataStructure/index.md',
+      },
+      {
+        text: '学长的喵喵工具',
+        link: '/computer/tool/index.md',
       },
     ],
   },
@@ -21,7 +33,7 @@ export default [
     items: [
       {
         text: '蓝桥杯备赛',
-        link: '/competition/lanqiao/lanqiao.md',
+        link: '/competition/lanqiao/index.md',
       },
     ],
   },
