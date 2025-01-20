@@ -40,14 +40,12 @@
 
 .grid {
   font-weight: 500;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding:12px;
+  justify-content: space-between; 
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .text {
