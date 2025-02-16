@@ -1,4 +1,4 @@
-## 蓝桥杯备赛资料
+## 蓝桥杯备赛资料(算法赛道)
 **<span style="font-size: 20px;">移动创新实验室</span>**
 - **资料来源：<span style="font-size: 18px;">佘涛</span>**
 - **编辑者：<span style="font-size: 18px;">柴浩天</span>**

@@ -23,6 +23,14 @@ export default [
         link: '/computer/dataStructure/index.md',
       },
       {
+        text: 'Markdown',
+        link: '/computer/Markdown/index.md',
+      },
+      {
+        text: 'node.js',
+        link: '/computer/node.js/index.md',
+      },
+      {
         text: '学长的喵喵工具',
         link: '/computer/tool/index.md',
       },
@@ -32,8 +40,12 @@ export default [
     text: '备赛资料',
     items: [
       {
-        text: '蓝桥杯备赛',
-        link: '/competition/lanqiao/index.md',
+        text: '蓝桥杯(web应用)',
+        link: '/competition/lanqiaoWeb/index.md',
+      },
+      {
+        text: '蓝桥杯（算法）',
+        link: '/competition/lanqiaoAlgo/index.md',
       },
     ],
   },

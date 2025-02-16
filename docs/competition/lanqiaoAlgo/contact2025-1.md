@@ -69,7 +69,7 @@ m 个节目，满足他的要求。
 请编写代码，完成 排序，对给定数据进行升序排列。</span>**
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
-```
+``` java
 import java.util.Scanner;
 
 public class Main {
@@ -158,7 +158,7 @@ public class Main {
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
 
-```
+``` java
 import java.util.Scanner;
 
 public class Main {
@@ -218,7 +218,7 @@ n 的台阶，从下往上走，每一步的阶数为 1，2，3 中的一个。�
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
 
-```
+``` java
 import java.util.Scanner;
 
 public class Main {
@@ -250,7 +250,7 @@ public class Main {
     }
 }
 
-```
+``` 
 
 - **难度：<span style="font-size: 12px;">中等</span>**
 - **测试用例通过比例：<span style="font-size: 12px;">5/5</span>**
@@ -266,7 +266,7 @@ public class Main {
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
 
-```
+``` java
 import java.util.Scanner;
 
 public class Main {
@@ -317,7 +317,7 @@ public class Main {
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
 
-```
+``` java
 import java.util.Scanner;
 
 public class Main {
@@ -369,7 +369,7 @@ public class Main {
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
 
-```
+``` java
 
 import java.util.Scanner;
 
@@ -428,7 +428,7 @@ public class Main {
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
 
-```
+``` java
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -512,7 +512,7 @@ public class Main {
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
 
-```
+``` java
 
 import java.util.Scanner;
 import java.util.HashMap;
@@ -570,7 +570,7 @@ public class Main {
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
 
-```
+``` java
 import java.util.Scanner;
 
 public class Main {
@@ -622,7 +622,7 @@ R
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
 
-```
+``` java 
 import java.util.Scanner;
 
 public class Main {
@@ -678,7 +678,7 @@ m 个节目，满足他的要求。
 - **资料来源：<span style="font-size: 18px;">柴浩天</span>**
 - **参考答案：<span style="font-size: 12px;">答案并不唯一</span>**
 
-```
+``` java 
 import java.util.Scanner;
 import java.util.Deque;
 import java.util.ArrayDeque;
