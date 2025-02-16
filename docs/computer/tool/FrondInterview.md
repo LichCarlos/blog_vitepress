@@ -49,7 +49,8 @@ DOCTYPE是HTML5中一种标准通用标记语言的文档类型声明，它的�
 
 如果没有defer或async属性，浏览器会立即加载并执行相应的脚本。它不会等待后续加载的文档元素，读取到就会开始加载和执行，这样就阻塞了后续文档的加载。
 
-下图可以直观的看出三者之间的区别: ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b0a8a139519f46dfa2d1992c58eb5397~tplv-k3u1fbpfcp-watermark.awebp) 其中蓝色代表js脚本网络加载时间，红色代表js脚本执行时间，绿色代表html解析。
+下图可以直观的看出三者之间的区别: 
+ 其中蓝色代表js脚本网络加载时间，红色代表js脚本执行时间，绿色代表html解析。
 
 **defer 和 async属性都是去异步加载外部的JS脚本文件，它们都不会阻塞页面的解析**，其区别如下：
 
@@ -5987,7 +5988,8 @@ $set()方法相当于手动的去把obj.b处理成一个响应式的属性，此
 
 ### 20. Vue中封装的数组方法有哪些，其如何实现页面更新
 
-在Vue中，对响应式处理利用的是Object.defineProperty对数据进行拦截，而这个方法并不能监听到数组内部变化，数组长度变化，数组的截取变化等，所以需要对这些操作进行hack，让Vue能监听到其中的变化。 ![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/6be20296a76f4e7085dfb510a3211d16tplv-k3u1fbpfcp-watermark.awebp) 那Vue是如何实现让这些数组方法实现元素的实时更新的呢，下面是Vue中对这些方法的封装：
+在Vue中，对响应式处理利用的是Object.defineProperty对数据进行拦截，而这个方法并不能监听到数组内部变化，数组长度变化，数组的截取变化等，所以需要对这些操作进行hack，让Vue能监听到其中的变化。 
+ 那Vue是如何实现让这些数组方法实现元素的实时更新的呢，下面是Vue中对这些方法的封装：
 
 ```javascript
 // 缓存数组原型
@@ -6048,7 +6050,7 @@ methodsToPatch.forEach(function(method) {
 - SPA单页面应用（SinglePage Web Application），指只有一个主页面的应用，一开始只需要加载一次js、css等相关资源。所有内容都包含在主页面，对每一个功能模块组件化。单页应用跳转，就是切换相关组件，仅仅刷新局部资源。
 - MPA多页面应用 （MultiPage Application），指有多个独立页面的应用，每个页面必须重复加载js、css等相关资源。多页应用跳转，需要整页资源刷新。
 
-**区别：** ![775316ebb4c727f7c8771cc2c06e06dd.jpg](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/76b3d747986e45e096abaf64faf5e332tplv-k3u1fbpfcp-watermark.awebp)
+**区别：** 
 
 ### 22. Vue template 到 render 的过程
 
@@ -6106,7 +6108,7 @@ generate将ast抽象语法树编译成 render字符串并将静态部分放到 s
 - mixins 接收一个混入对象的数组，其中混入对象可以像正常的实例对象一样包含实例选项，这些选项会被合并到最终的选项中。Mixin 钩子按照传入顺序依次调用，并在调用组件自身的钩子之前被调用。
 - extends 主要是为了便于扩展单文件组件，接收一个对象或构造函数。
 
-![bb253b1d177f421741af0e7dd0f52b5e.jpg](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/5e7df745017242a7beaba81e854a0f97tplv-k3u1fbpfcp-watermark.awebp) **（2）mergeOptions 的执行过程**
+ **（2）mergeOptions 的执行过程**
 
 - 规范化选项（normalizeProps、normalizelnject、normalizeDirectives)
 - 对未合并的选项，进行判断
