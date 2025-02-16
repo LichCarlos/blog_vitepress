@@ -8,8 +8,8 @@ hero:
   tagline: 加油！你能行
   actions:
     - theme: brand
-      text: 蓝桥杯备赛
-      link: /competition/lanqiao/lanqiao.md
+      text: 大学生A+类大赛
+      link: /competition/competition/index.md
     - theme: alt
       text: 部门培训
       link: /lab/data/index.md
