@@ -10,7 +10,7 @@ export default {
     },
     {
       text: '前端面试题',
-      link: '/computer/tool/前端开发高频面试题合集.md',
+      link: '/computer/tool/FrondInterview.md',
     },
 
   ],

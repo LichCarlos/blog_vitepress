@@ -1,5 +1,6 @@
 # HTML篇
 
+
 ### 1. src和href的区别
 
 src和href都是**用来引用外部的资源**，它们的区别如下：
@@ -501,8 +502,6 @@ label标签来定义表单控件的关系：当用户选择label标签时，浏�
 
 # CSS篇
 
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/css.webp)
-
 ## 一、CSS基础
 
 ### 1. CSS选择器及其优先级
@@ -711,7 +710,7 @@ MDN对该方法的描述：
 
 ### 11. 对盒模型的理解
 
-CSS3中的盒模型有以下两种：标准盒子模型、IE盒子模型 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/4544d45b5a0c47a58c0c33a7d8fbac09tplv-k3u1fbpfcp-watermark.awebp) ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/4040de9fef1a49f4ae0ae66039edcfe0tplv-k3u1fbpfcp-watermark.awebp) 盒模型都是由四个部分组成的，分别是margin、border、padding和content。
+CSS3中的盒模型有以下两种：标准盒子模型、IE盒子模型 盒模型都是由四个部分组成的，分别是margin、border、padding和content。
 
 标准盒模型和IE盒模型的区别在于设置width和height时，所对应的范围不同：
 
@@ -813,7 +812,7 @@ CSSSprites（精灵图），将一个页面涉及到的所有图片都包含到�
 
 而如果有一把尺子来实际测量这部手机的物理像素，实际为 1242*2688 物理像素；经过计算可知，1242/414=3，也就是说，在单边上，一个逻辑像素=3个物理像素，就说这个屏幕的像素密度为 3，也就是常说的 3 倍屏。
 
-对于图片来说，为了保证其不失真，1 个图片像素至少要对应一个物理像素，假如原始图片是 500300 像素，那么在 3 倍屏上就要放一个 1500900 像素的图片才能保证 1 个物理像素至少对应一个图片像素，才能不失真。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/5f1da1cbae9b45528cc2b33f74eb32f2tplv-k3u1fbpfcp-watermark.awebp) 当然，也可以针对所有屏幕，都只提供最高清图片。虽然低密度屏幕用不到那么多图片像素，而且会因为下载多余的像素造成带宽浪费和下载延迟，但从结果上说能保证图片在所有屏幕上都不会失真。
+对于图片来说，为了保证其不失真，1 个图片像素至少要对应一个物理像素，假如原始图片是 500300 像素，那么在 3 倍屏上就要放一个 1500900 像素的图片才能保证 1 个物理像素至少对应一个图片像素，才能不失真。  当然，也可以针对所有屏幕，都只提供最高清图片。虽然低密度屏幕用不到那么多图片像素，而且会因为下载多余的像素造成带宽浪费和下载延迟，但从结果上说能保证图片在所有屏幕上都不会失真。
 
 还可以使用 CSS 媒体查询来判断不同的像素密度，从而选择不同的图片:
 
@@ -1003,7 +1002,7 @@ CSS 工程化是为了解决以下问题：
 
 **（1）预处理器：为什么要用预处理器？它的出现是为了解决什么问题？**
 
-预处理器，其实就是 CSS 世界的“轮子”。预处理器支持我们写一种类似 CSS、但实际并不是 CSS 的语言，然后把它编译成 CSS 代码： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/3d58c5313e884e38b1545a5896613250tplv-k3u1fbpfcp-watermark.awebp) 那为什么写 CSS 代码写得好好的，偏偏要转去写“类 CSS”呢？这就和本来用 JS 也可以实现所有功能，但最后却写 React 的 jsx 或者 Vue 的模板语法一样——为了爽！要想知道有了预处理器有多爽，首先要知道的是传统 CSS 有多不爽。随着前端业务复杂度的提高，前端工程中对 CSS 提出了以下的诉求：
+预处理器，其实就是 CSS 世界的“轮子”。预处理器支持我们写一种类似 CSS、但实际并不是 CSS 的语言，然后把它编译成 CSS 代码： 那为什么写 CSS 代码写得好好的，偏偏要转去写“类 CSS”呢？这就和本来用 JS 也可以实现所有功能，但最后却写 React 的 jsx 或者 Vue 的模板语法一样——为了爽！要想知道有了预处理器有多爽，首先要知道的是传统 CSS 有多不爽。随着前端业务复杂度的提高，前端工程中对 CSS 提出了以下的诉求：
 
 1. 宏观设计上：我们希望能优化 CSS 文件的目录结构，对现有的 CSS 文件实现复用；
 2. 编码优化上：我们希望能写出结构清晰、简明易懂的 CSS，需要它具有一目了然的嵌套层级关系，而不是无差别的一铺到底写法；我们希望它具有变量特征、计算能力、循环能力等等更强的可编程性，这样我们可以少写一些无用的代码；
@@ -1020,7 +1019,7 @@ CSS 工程化是为了解决以下问题：
 
 **（2）PostCss：PostCss 是如何工作的？我们在什么场景下会使用 PostCss？**
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/2911f98bbacf4b1cbffbb9e1527a4977tplv-k3u1fbpfcp-watermark.awebp) 它和预处理器的不同就在于，预处理器处理的是 类CSS，而 PostCss 处理的就是 CSS 本身。Babel 可以将高版本的 JS 代码转换为低版本的 JS 代码。PostCss 做的是类似的事情：它可以编译尚未被浏览器广泛支持的先进的 CSS 语法，还可以自动为一些需要额外兼容的语法增加前缀。更强的是，由于 PostCss 有着强大的插件机制，支持各种各样的扩展，极大地强化了 CSS 的能力。
+它和预处理器的不同就在于，预处理器处理的是 类CSS，而 PostCss 处理的就是 CSS 本身。Babel 可以将高版本的 JS 代码转换为低版本的 JS 代码。PostCss 做的是类似的事情：它可以编译尚未被浏览器广泛支持的先进的 CSS 语法，还可以自动为一些需要额外兼容的语法增加前缀。更强的是，由于 PostCss 有着强大的插件机制，支持各种各样的扩展，极大地强化了 CSS 的能力。
 
 PostCss 在业务中的使用场景非常多：
 
@@ -1051,7 +1050,7 @@ PostCss 在业务中的使用场景非常多：
 - `imgs.offsetTop` 是元素顶部距离文档顶部的高度（包括滚动条的距离）；
 - 内容达到显示区域的：`img.offsetTop < window.innerHeight + document.body.scrollTop;`
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/c57fc165a4ce4d5b9a2885867d4f1cabtplv-k3u1fbpfcp-watermark.awebp)
+
 
 ### 30. z-index属性在什么情况下会失效
 
@@ -1625,7 +1624,7 @@ clear属性只有块级元素才有效的，而::after等伪元素默认都是�
 
 ### 5. 元素的层叠顺序
 
-层叠顺序，英文称作 stacking order，表示元素发生层叠时有着特定的垂直显示顺序。下面是盒模型的层叠规则： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/fbc59ae1adb5454c8c7f60582df10ff9tplv-k3u1fbpfcp-watermark.awebp) 对于上图，由上到下分别是： （1）背景和边框：建立当前层叠上下文元素的背景和边框。 （2）负的z-index：当前层叠上下文中，z-index属性值为负的元素。 （3）块级盒：文档流内非行内级非定位后代元素。 （4）浮动盒：非定位浮动元素。 （5）行内盒：文档流内行内级非定位后代元素。 （6）z-index:0：层叠级数为0的定位元素。 （7）正z-index：z-index属性值为正的定位元素。
+层叠顺序，英文称作 stacking order，表示元素发生层叠时有着特定的垂直显示顺序。下面是盒模型的层叠规则：对于上图，由上到下分别是： （1）背景和边框：建立当前层叠上下文元素的背景和边框。 （2）负的z-index：当前层叠上下文中，z-index属性值为负的元素。 （3）块级盒：文档流内非行内级非定位后代元素。 （4）浮动盒：非定位浮动元素。 （5）行内盒：文档流内行内级非定位后代元素。 （6）z-index:0：层叠级数为0的定位元素。 （7）正z-index：z-index属性值为正的定位元素。
 
 **注意:** 当定位元素z-index:auto，生成盒在当前层叠上下文中的层级为 0，不会建立新的层叠上下文，除非是根元素。
 
@@ -1645,15 +1644,9 @@ position有以下属性值：
 
 - **relative：** 元素的定位永远是相对于元素自身位置的，和其他元素没关系，也不会影响其他元素。
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/6523548b65834c578202acc5e6388af4tplv-k3u1fbpfcp-watermark.awebp)
-
 - **fixed：** 元素的定位是相对于 window （或者 iframe）边界的，和其他元素没有关系。但是它具有破坏性，会导致其他元素位置的变化。
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/4b35e646aa3c4d9cac803753d8b67c39tplv-k3u1fbpfcp-watermark.awebp)
-
 - **absolute：** 元素的定位相对于前两者要复杂许多。如果为 absolute 设置了 top、left，浏览器会根据什么去确定它的纵向和横向的偏移量呢？答案是浏览器会递归查找该元素的所有父元素，如果找到一个设置了`position:relative/absolute/fixed`的元素，就以该元素为基准定位，如果没找到，就以浏览器边界定位。如下两个图所示：
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/d6d4f199b3f842f090890eea32318e11tplv-k3u1fbpfcp-watermark.awebp) ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/d2c7150bd7614a548f04a2919f1ea12atplv-k3u1fbpfcp-watermark.awebp)
 
 ### 7. **display、float、position的关系**
 
@@ -1704,14 +1697,13 @@ div {
 
 ```
 
-将元素的长宽都设置为0，显示出来的效果是这样的： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/cba8731fea9842a8b8103c2b387fe64ftplv-k3u1fbpfcp-watermark.awebp) 所以可以根据border这个特性来绘制三角形： **（1）三角1**
+将元素的长宽都设置为0，显示出来的效果是这样的： 所以可以根据border这个特性来绘制三角形： **（1）三角1**
 
 ```css
 div {    width: 0;    height: 0;    border-top: 50px solid red;    border-right: 50px solid transparent;    border-left: 50px solid transparent;}
 
 ```
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/ab996951a0cc42cf9e6d9e12eb827f8btplv-k3u1fbpfcp-watermark.awebp) **（2）三角2**
+**（2）三角2**
 
 ```css
 div {
@@ -1723,8 +1715,7 @@ div {
 }
 
 ```
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/531c6c250dd8446fb0f264e7b3df6fbatplv-k3u1fbpfcp-watermark.awebp) **（3）三角3**
+**（3）三角3**
 
 ```css
 div {
@@ -1736,8 +1727,7 @@ div {
 }
 
 ```
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/e4beaf4e4a0140ad9e7252f8a6e4e8e6tplv-k3u1fbpfcp-watermark.awebp) **（4）三角4**
+**（4）三角4**
 
 ```css
 div {
@@ -1749,8 +1739,7 @@ div {
 }
 
 ```
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/445f50ad19164b0f863ad8dfef2a29b1tplv-k3u1fbpfcp-watermark.awebp) **（5）三角5**
+**（5）三角5**
 
 ```css
 div {
@@ -1761,8 +1750,7 @@ div {
 }
 
 ```
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/a1ac630463164e42a027b54bb95f56batplv-k3u1fbpfcp-watermark.awebp) 还有很多，就不一一实现了，总体的原则就是通过上下左右边框来控制三角形的方向，用边框的宽度比来控制三角形的角度。
+还有很多，就不一一实现了，总体的原则就是通过上下左右边框来控制三角形的方向，用边框的宽度比来控制三角形的角度。
 
 ### 2. 实现一个扇形
 
@@ -1778,8 +1766,6 @@ div{
 }
 
 ```
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/db5e46aea0ce4805a0c2bbec2743546etplv-k3u1fbpfcp-watermark.awebp)
 
 ### 3. 实现一个宽高自适应的正方形
 
@@ -1859,7 +1845,7 @@ window.devicePixelRatio = 设备的物理像素 / CSS像素。
 
 ```
 
-打开 Chrome 浏览器，启动移动端调试模式，在控制台去输出这个 `devicePixelRatio` 的值。这里选中 iPhone6/7/8 这系列的机型，输出的结果就是2： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/a8af7dca29f84b7e9d1f94232713ef07tplv-k3u1fbpfcp-watermark.awebp) 这就意味着设置的 1px CSS 像素，在这个设备上实际会用 2 个物理像素单元来进行渲染，所以实际看到的一定会比 1px 粗一些。 **解决1px 问题的三种思路：**
+打开 Chrome 浏览器，启动移动端调试模式，在控制台去输出这个 `devicePixelRatio` 的值。这里选中 iPhone6/7/8 这系列的机型，输出的结果就是2：  这就意味着设置的 1px CSS 像素，在这个设备上实际会用 2 个物理像素单元来进行渲染，所以实际看到的一定会比 1px 粗一些。 **解决1px 问题的三种思路：**
 
 #### 思路一：直接写 0.5px
 
@@ -1938,7 +1924,6 @@ metaEl.setAttribute('content', `width=device-width,user-scalable=no,initial-scal
 
 # JavaScript篇（上）
 
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/js1.webp)
 
 ## 一、数据类型
 
@@ -2172,7 +2157,7 @@ console.log(n1 + n2)  // 0.30000000000000004
 
 根据这个原则，0.1和0.2的二进制数相加，再转化为十进制数就是：`0.30000000000000004`。
 
-下面看一下**双精度数是如何保存**的： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/0cb225cf71d748a8b2d6a5615e402711tplv-k3u1fbpfcp-watermark.awebp)
+下面看一下**双精度数是如何保存**的： 
 
 - 第一部分（蓝色）：用来存储符号位（sign），用来区分正负数，0表示正数，占用1位
 - 第二部分（绿色）：用来存储指数（exponent），占用11位
@@ -2283,8 +2268,7 @@ NaN 是一个特殊值，它和自身不相等，是唯一一个非自反（自�
 
 ```
 
-其流程图如下： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/c451c19e23dd4726b3f36223b6c18a1etplv-k3u1fbpfcp-watermark.awebp)
-
+其流程图如下：
 ### 12. 其他值到字符串的转换规则？
 
 - Null 和 Undefined 类型 ，null 转换为 "null"，undefined 转换为 "undefined"，
@@ -2877,14 +2861,14 @@ const [a, b, c] = [1, 2, 3]
 
 ```
 
-最终，a、b、c分别被赋予了数组第0、1、2个索引位的值： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/e55fc36b191340e69698782fbd67ef4ftplv-k3u1fbpfcp-watermark.awebp) 数组里的0、1、2索引位的元素值，精准地被映射到了左侧的第0、1、2个变量里去，这就是数组解构的工作模式。还可以通过给左侧变量数组设置空占位的方式，实现对数组中某几个元素的精准提取：
+最终，a、b、c分别被赋予了数组第0、1、2个索引位的值：  数组里的0、1、2索引位的元素值，精准地被映射到了左侧的第0、1、2个变量里去，这就是数组解构的工作模式。还可以通过给左侧变量数组设置空占位的方式，实现对数组中某几个元素的精准提取：
 
 ```javascript
 const [a,,c] = [1,2,3]
 
 ```
 
-通过把中间位留空，可以顺利地把数组第一位和最后一位的值赋给 a、c 两个变量： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/a14ffbb3df2646a4a84f4a0c7d62d975tplv-k3u1fbpfcp-watermark.awebp)
+通过把中间位留空，可以顺利地把数组第一位和最后一位的值赋给 a、c 两个变量：
 
 **2）对象的解构** 对象解构比数组结构稍微复杂一些，也更显强大。在解构对象时，是以属性的名称为匹配条件，来提取想要的数据的。现在定义一个对象：
 
@@ -2903,7 +2887,7 @@ const { name, age } = stu
 
 ```
 
-这样就得到了 name 和 age 两个和 stu 平级的变量： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/1ed2565845f2415b8243c8c355b2c6d6tplv-k3u1fbpfcp-watermark.awebp)
+这样就得到了 name 和 age 两个和 stu 平级的变量： 
 
 注意，对象解构严格以属性名作为定位依据，所以就算调换了 name 和 age 的位置，结果也是一样的：
 
@@ -4149,8 +4133,7 @@ fetch的缺点：
 
 当访问一个对象的属性时，如果这个对象内部不存在这个属性，那么它就会去它的原型对象里找这个属性，这个原型对象又会有自己的原型，于是就这样一直找下去，也就是原型链的概念。原型链的尽头一般来说都是 Object.prototype 所以这就是新建的对象为什么能够使用 toString() 等方法的原因。
 
-**特点：** JavaScript 对象是通过引用来传递的，创建的每个新对象实体中并没有一份属于自己的原型副本。当修改原型时，与之相关的对象也会继承这一改变。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/c68fcad75ea54d62a9404aa02cafc65ctplv-k3u1fbpfcp-watermark.awebp)
-
+**特点：** JavaScript 对象是通过引用来传递的，创建的每个新对象实体中并没有一份属于自己的原型副本。当修改原型时，与之相关的对象也会继承这一改变。 
 ### 2. 原型修改、重写
 
 ```javascript
@@ -4201,7 +4184,7 @@ Person.prototype.constructor  // Person
 
 ### 4. 原型链的终点是什么？如何打印出原型链的终点？
 
-由于`Object`是构造函数，原型链终点是`Object.prototype.__proto__`，而`Object.prototype.__proto__=== null // true`，所以，原型链的终点是`null`。原型链上的所有原型都是对象，所有的对象最终都是由`Object`构造的，而`Object.prototype`的下一级是`Object.prototype.__proto__`。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/30821909377545248d244b0a4e965bb1tplv-k3u1fbpfcp-watermark.awebp)
+由于`Object`是构造函数，原型链终点是`Object.prototype.__proto__`，而`Object.prototype.__proto__=== null // true`，所以，原型链的终点是`null`。原型链上的所有原型都是对象，所有的对象最终都是由`Object`构造的，而`Object.prototype`的下一级是`Object.prototype.__proto__`。
 
 ### 5. 如何获得对象非原型链上的属性？
 
@@ -4392,7 +4375,6 @@ first();
 
 # JavaScript篇（下）
 
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/js1-17060784822524.webp)
 
 ## 六、this/call/apply/bind
 
@@ -4591,8 +4573,7 @@ async function func1() {
 console.log(func1())
 
 ```
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/40194bdc07024b78b6da8bb43d84a7d8tplv-k3u1fbpfcp-watermark.awebp) func1的运行结果其实就是一个Promise对象。因此也可以使用then来处理后续逻辑。
+func1的运行结果其实就是一个Promise对象。因此也可以使用then来处理后续逻辑。
 
 ```javascript
 func1().then(res => {
@@ -4974,9 +4955,6 @@ let result = testAsy();
 console.log(result)
 
 ```
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/507e439801c043739c4667567e5f8562tplv-k3u1fbpfcp-watermark.awebp)
-
 所以，async 函数返回的是一个 Promise 对象。async 函数（包含函数语句、函数表达式、Lambda表达式）会返回一个 Promise 对象，如果在函数中 `return` 一个直接量，async 会把这个直接量通过 `Promise.resolve()` 封装成 Promise 对象。
 
 async 函数返回的是一个 Promise 对象，所以在最外层不能用 await 获取其返回值的情况下，当然应该用原来的方式：`then()` 链来处理这个 Promise 对象，就像这样：
@@ -5382,8 +5360,6 @@ obj1.a =  null
 
 当一个Vue实例创建时，Vue会遍历data中的属性，用 Object.defineProperty（vue3.0使用proxy ）将它们转为 getter/setter，并且在内部追踪相关依赖，在属性被访问和修改时通知变化。 每个组件实例都有相应的 watcher 程序实例，它会在组件渲染的过程中把属性记录为依赖，之后当依赖项的setter被调用时，会通知watcher重新计算，从而致使它关联的组件得以更新。
 
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/vue1.webp)
-
 ### 2. 双向数据绑定的原理
 
 Vue.js 是采用**数据劫持**结合**发布者-订阅者模式**的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。主要分为以下几个步骤：
@@ -5392,8 +5368,6 @@ Vue.js 是采用**数据劫持**结合**发布者-订阅者模式**的方式，�
 2. compile解析模板指令，将模板中的变量替换成数据，然后初始化渲染页面视图，并将每个指令对应的节点绑定更新函数，添加监听数据的订阅者，一旦数据有变动，收到通知，更新视图
 3. Watcher订阅者是Observer和Compile之间通信的桥梁，主要做的事情是: ①在自身实例化时往属性订阅器(dep)里面添加自己 ②自身必须有一个update()方法 ③待属性变动dep.notice()通知时，能调用自身的update()方法，并触发Compile中绑定的回调，则功成身退。
 4. MVVM作为数据绑定的入口，整合Observer、Compile和Watcher三者，通过Observer来监听自己的model数据变化，通过Compile来解析编译模板指令，最终利用Watcher搭起Observer和Compile之间的通信桥梁，达到数据变化 -> 视图更新；视图交互变化(input) -> 数据model变更的双向绑定效果。
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/a286bdc076ae425fb9591bb8c4153240tplv-k3u1fbpfcp-watermark.awebp)
 
 ### 3. 使用 Object.defineProperty() 来进行数据劫持有什么缺点？
 
@@ -5409,7 +5383,7 @@ MVC、MVP 和 MVVM 是三种常见的软件架构设计模式，主要通过分�
 
 **（1）MVC**
 
-MVC 通过分离 Model、View 和 Controller 的方式来组织代码结构。其中 View 负责页面的显示逻辑，Model 负责存储页面的业务数据，以及对相应数据的操作。并且 View 和 Model 应用了观察者模式，当 Model 层发生改变的时候它会通知有关 View 层更新页面。Controller 层是 View 层和 Model 层的纽带，它主要负责用户与应用的响应操作，当用户与页面产生交互的时候，Controller 中的事件触发器就开始工作了，通过调用 Model 层，来完成对 Model 的修改，然后 Model 层再去通知 View 层更新。 ![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/a65e1b9145894647a25788caf12ddd26tplv-k3u1fbpfcp-watermark.awebp)
+MVC 通过分离 Model、View 和 Controller 的方式来组织代码结构。其中 View 负责页面的显示逻辑，Model 负责存储页面的业务数据，以及对相应数据的操作。并且 View 和 Model 应用了观察者模式，当 Model 层发生改变的时候它会通知有关 View 层更新页面。Controller 层是 View 层和 Model 层的纽带，它主要负责用户与应用的响应操作，当用户与页面产生交互的时候，Controller 中的事件触发器就开始工作了，通过调用 Model 层，来完成对 Model 的修改，然后 Model 层再去通知 View 层更新。
 
 （2）MVVM
 
@@ -5421,7 +5395,7 @@ MVVM 分为 Model、View、ViewModel：
 
 Model和View并无直接关联，而是通过ViewModel来进行联系的，Model和ViewModel之间有着双向数据绑定的联系。因此当Model中的数据改变时会触发View层的刷新，View中由于用户交互操作而改变的数据也会在Model中同步。
 
-这种模式实现了 Model和View的数据自动同步，因此开发者只需要专注于数据的维护操作即可，而不需要自己操作DOM。 ![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/d5ce15b7b704483eb91ee1f5d1d64786tplv-k3u1fbpfcp-watermark.awebp)
+这种模式实现了 Model和View的数据自动同步，因此开发者只需要专注于数据的维护操作即可，而不需要自己操作DOM。 
 
 **（3）MVP**
 
@@ -7096,8 +7070,6 @@ export default {
 
 # Vue篇（下）
 
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/vue1-17060782843001.webp)
-
 ## 四、路由
 
 ### 1. Vue-Router 的懒加载如何实现
@@ -7525,7 +7497,7 @@ Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。每一个 
 - Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。
 - 改变 store 中的状态的唯一途径就是显式地提交 (commit) mutation。这样可以方便地跟踪每一个状态的变化。
 
-![b025e120ca3d0bd2ded3d038d58cacf4.jpg](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/92fc4b2c6e414344b9b22bc057dcd39ctplv-k3u1fbpfcp-watermark.awebp) Vuex为Vue Components建立起了一个完整的生态圈，包括开发中的API调用一环。 **（1）核心流程中的主要功能：**
+Vuex为Vue Components建立起了一个完整的生态圈，包括开发中的API调用一环。 **（1）核心流程中的主要功能：**
 
 - Vue Components 是 vue 组件，组件会触发（dispatch）一些事件或动作，也就是图中的 Actions;
 - 在组件中发出的动作，肯定是想获取或者改变数据的，但是在 vuex 中，数据是集中管理的，不能直接去更改数据，所以会把这个动作提交（Commit）到 Mutations 中;
@@ -7889,8 +7861,6 @@ key 是为 Vue 中 vnode 的唯一标记，通过这个 key，diff 操作可以�
 
 # React篇（上）
 
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/react1.webp)
-
 
 
 ## 一、组件基础
@@ -7904,7 +7874,7 @@ key 是为 Vue 中 vnode 的唯一标记，通过这个 key，diff 操作可以�
 
 React并不是将click事件绑定到了div的真实DOM上，而是在document处监听了所有的事件，当事件发生并且冒泡到document处的时候，React将事件内容封装并交由真正的处理函数运行。这样的方式不仅仅减少了内存的消耗，还能在组件挂在销毁时统一订阅和移除事件。
 
-除此之外，冒泡到document上的事件也不是原生的浏览器事件，而是由react自己实现的合成事件（SyntheticEvent）。因此如果不想要是事件冒泡的话应该调用event.preventDefault()方法，而不是调用event.stopProppagation()方法。 ![77fa6b2a59c92e160bc171f9c80783e7.jpg](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/1e969caa9fc647cf8985c4c841a01f60tplv-k3u1fbpfcp-watermark.awebp) JSX 上写的事件并没有绑定在对应的真实 DOM 上，而是通过事件代理的方式，将所有的事件都统一绑定在了 `document` 上。这样的方式不仅减少了内存消耗，还能在组件挂载销毁时统一订阅和移除事件。
+除此之外，冒泡到document上的事件也不是原生的浏览器事件，而是由react自己实现的合成事件（SyntheticEvent）。因此如果不想要是事件冒泡的话应该调用event.preventDefault()方法，而不是调用event.stopProppagation()方法。  JSX 上写的事件并没有绑定在对应的真实 DOM 上，而是通过事件代理的方式，将所有的事件都统一绑定在了 `document` 上。这样的方式不仅减少了内存消耗，还能在组件挂载销毁时统一订阅和移除事件。
 
 另外冒泡到 `document` 上的事件也不是原生浏览器事件，而是 React 自己实现的合成事件（SyntheticEvent）。因此我们如果不想要事件冒泡的话，调用 `event.stopPropagation` 是无效的，而应该调用 `event.preventDefault`。
 
@@ -8470,7 +8440,7 @@ render() {
 
 ```
 
-不可以，render 阶段 DOM 还没有生成，无法获取 DOM。DOM 的获取需要在 pre-commit 阶段和 commit 阶段： ![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/98a52a67abd14d8cb2ba1fc00c0662a2tplv-k3u1fbpfcp-watermark.awebp)
+不可以，render 阶段 DOM 还没有生成，无法获取 DOM。DOM 的获取需要在 pre-commit 阶段和 commit 阶段： 
 
 ### 18. 对React的插槽(Portals)的理解，如何使用，有哪些使用场景
 
@@ -8763,8 +8733,7 @@ React.forwardRef 会创建一个React组件，这个组件能够将其接受的 
 ## 二、数据管理
 
 ### 1. React setState 调用的原理
-
-![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/1e15b888f3bd4a1db8b72259331a4747tplv-k3u1fbpfcp-watermark.awebp) 具体的执行过程如下（源码级解析）：
+ 具体的执行过程如下（源码级解析）：
 
 - 首先调用了`setState` 入口函数，入口函数在这里就是充当一个分发器的角色，根据入参的不同，将其分发到不同的功能函数中去；
 
@@ -9105,8 +9074,6 @@ React 通常将组件生命周期分为三个阶段：
 - 更新过程（Update），组件状态发生变化，重新更新渲染的过程；
 - 卸载过程（Unmount），组件从DOM树中被移除的过程；
 
-![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/1570030fdd4a49f2ad8cfd01a24f80d7tplv-k3u1fbpfcp-watermark.awebp)
-
 #### 1）组件挂载阶段
 
 挂载阶段组件被创建，然后组件实例插入到 DOM 中，完成组件的第一次渲染，该过程只会发生一次，在此阶段会依次调用以下这些方法：
@@ -9344,7 +9311,8 @@ componentDidCatch(error, info)，此生命周期在后代组件抛出错误后�
 - error：抛出的错误。
 - info：带有 componentStack key 的对象，其中包含有关组件引发错误的栈信息
 
-React常见的生命周期如下： ![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/18842f9ec3674acdbdd7ff35f9683200tplv-k3u1fbpfcp-watermark.awebp) **React常见生命周期的过程大致如下：**
+React常见的生命周期如下： 
+ **React常见生命周期的过程大致如下：**
 
 - 挂载阶段，首先执行constructor构造方法，来创建组件
 - 创建完成之后，就会执行render方法，该方法会返回需要渲染的内容
@@ -9494,7 +9462,8 @@ const o2 = JSON.parse(JSON.stringify(this.state.obj))
 
 ### 5. state 和 props 触发更新的生命周期分别有什么区别？
 
-**state 更新流程：** ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/1451ff964c89442c9384478e494ce283tplv-k3u1fbpfcp-watermark.awebp) 这个过程当中涉及的函数：
+**state 更新流程：** 
+ 这个过程当中涉及的函数：
 
 1. shouldComponentUpdate: 当组件的 state 或 props 发生改变时，都会首先触发这个生命周期函数。它会接收两个参数：nextProps, nextState——它们分别代表传入的新 props 和新的 state 值。拿到这两个值之后，我们就可以通过一些对比逻辑来决定是否有 re-render（重渲染）的必要了。如果该函数的返回值为 false，则生命周期终止，反之继续；
 
@@ -9505,7 +9474,8 @@ const o2 = JSON.parse(JSON.stringify(this.state.obj))
 
 ****
 
-**props 更新流程：** ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/774a110865454a7b8cdc5a01562b9d0ctplv-k3u1fbpfcp-watermark.awebp) 相对于 state 更新，props 更新后唯一的区别是增加了对 componentWillReceiveProps 的调用。关于 componentWillReceiveProps，需要知道这些事情：
+**props 更新流程：** 
+ 相对于 state 更新，props 更新后唯一的区别是增加了对 componentWillReceiveProps 的调用。关于 componentWillReceiveProps，需要知道这些事情：
 
 - componentWillReceiveProps：它在Component接受到新的 props 时被触发。componentWillReceiveProps 会接收一个名为 nextProps 的参数（对应新的 props 值）。**该生命周期是 React16 废弃掉的三个生命周期之一**。在它被废弃前，可以用它来比较 this.props 和 nextProps 来重新setState。在 React16 中，用一个类似的新生命周期 getDerivedStateFromProps 来代替它。
 
@@ -9531,7 +9501,8 @@ const o2 = JSON.parse(JSON.stringify(this.state.obj))
 
 ### 7. React 16中新生命周期有哪些
 
-关于 React16 开始应用的新生命周期： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/f2f59925a79e470eb730e605854e81b8tplv-k3u1fbpfcp-watermark.awebp) 可以看出，React16 自上而下地对生命周期做了另一种维度的解读：
+关于 React16 开始应用的新生命周期：
+ 可以看出，React16 自上而下地对生命周期做了另一种维度的解读：
 
 - **Render 阶段**：用于计算一些必要的状态信息。这个阶段可能会被 React 暂停，这一点和 React16 引入的 Fiber 架构（我们后面会重点讲解）是有关的；
 - **Pre-commit阶段**：所谓“commit”，这里指的是“更新真正的 DOM 节点”这个动作。所谓 Pre-commit，就是说我在这个阶段其实还并没有去更新真实的 DOM，不过 DOM 信息已经是可以读取的了；
@@ -9970,8 +9941,6 @@ import { Switch, Route} from 'react-router-dom'
 ```
 
 # React篇（下）
-
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/react1-17060783398092.webp)
 
 ## 六、Redux
 
@@ -10538,7 +10507,8 @@ function DemoFunction(props) {
 
 除此之外，还有一些其他的不同。通过上面的区别，我们不能说谁好谁坏，它们各有自己的优势。在 React-Hooks 出现之前，**类组件的能力边界明显强于函数组件。**
 
-实际上，类组件和函数组件之间，是面向对象和函数式编程这两套不同的设计思想之间的差异。而函数组件更加契合 React 框架的设计理念： ![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/84fdd6a1619e497c9c0096a960ba4629tplv-k3u1fbpfcp-watermark.awebp) React 组件本身的定位就是函数，一个输入数据、输出 UI 的函数。作为开发者，我们编写的是声明式的代码，而 React 框架的主要工作，就是及时地把声明式的代码转换为命令式的 DOM 操作，把数据层面的描述映射到用户可见的 UI 变化中去。这就意味着从原则上来讲，React 的数据应该总是紧紧地和渲染绑定在一起的，而类组件做不到这一点。**函数组件就真正地将数据和渲染绑定到了一起。函数组件是一个更加匹配其设计理念、也更有利于逻辑拆分与重用的组件表达形式。**
+实际上，类组件和函数组件之间，是面向对象和函数式编程这两套不同的设计思想之间的差异。而函数组件更加契合 React 框架的设计理念： 
+ React 组件本身的定位就是函数，一个输入数据、输出 UI 的函数。作为开发者，我们编写的是声明式的代码，而 React 框架的主要工作，就是及时地把声明式的代码转换为命令式的 DOM 操作，把数据层面的描述映射到用户可见的 UI 变化中去。这就意味着从原则上来讲，React 的数据应该总是紧紧地和渲染绑定在一起的，而类组件做不到这一点。**函数组件就真正地将数据和渲染绑定到了一起。函数组件是一个更加匹配其设计理念、也更有利于逻辑拆分与重用的组件表达形式。**
 
 为了能让开发者更好的的去编写函数式组件。于是，React-Hooks 便应运而生。
 
@@ -10870,13 +10840,14 @@ Virtual DOM的更新DOM的准备工作耗费更多的时间，也就是JS层面�
 
 ### 2. React diff 算法的原理是什么？
 
-实际上，diff 算法探讨的就是虚拟 DOM 树发生变化后，生成 DOM 树更新补丁的方式。它通过对比新旧两株虚拟 DOM 树的变更差异，将更新补丁作用于真实 DOM，以最小成本完成视图更新。 ![CgqCHl_qyouAAkb9AAB_cmWuZhc920_mh1609406106571.jpg](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/e44d4ebb48a74ffda63754428c9d5273tplv-k3u1fbpfcp-watermark.awebp) 具体的流程如下：
+实际上，diff 算法探讨的就是虚拟 DOM 树发生变化后，生成 DOM 树更新补丁的方式。它通过对比新旧两株虚拟 DOM 树的变更差异，将更新补丁作用于真实 DOM，以最小成本完成视图更新。 
+ 具体的流程如下：
 
 - 真实的 DOM 首先会映射为虚拟 DOM；
 - 当虚拟 DOM 发生变化后，就会根据差距计算生成 patch，这个 patch 是一个结构化的数据，内容包含了增加、更新、移除等；
 - 根据 patch 去更新真实的 DOM，反馈到用户的界面上。
 
-![CgqCHl_qypGAZPuGAADYrK9nkJY878_mh1609406162857.jpg](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/246e03a02e3e48ff941f921843bd8676tplv-k3u1fbpfcp-watermark.awebp) 一个简单的例子：
+ 一个简单的例子：
 
 ```javascript
 import React from 'react'
@@ -11721,19 +11692,14 @@ JavaScript中的map不会对为null或者undefined的数据进行处理，而Rea
 
 - 客户端数据请求
 
-![51612599334_.pic.jpg](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/4df605c1333247919058d218a38779f0tplv-k3u1fbpfcp-watermark.awebp)
 
 - 服务端数据请求
-
-![61612599340_.pic.jpg](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/1d7c77623c784e6db840253132df5a35tplv-k3u1fbpfcp-watermark.awebp) **2）html渲染** 服务端渲染是先向后端服务器请求数据，然后生成完整首屏 html返回给浏览器；而客户端渲染是等js代码下载、加载、解析完成后再请求数据渲染，等待的过程页面是什么都没有的，就是用户看到的白屏。就是服务端渲染不需要等待js代码下载完成并请求数据，就可以返回一个已有完整数据的首屏页面。
+ **2）html渲染** 服务端渲染是先向后端服务器请求数据，然后生成完整首屏 html返回给浏览器；而客户端渲染是等js代码下载、加载、解析完成后再请求数据渲染，等待的过程页面是什么都没有的，就是用户看到的白屏。就是服务端渲染不需要等待js代码下载完成并请求数据，就可以返回一个已有完整数据的首屏页面。
 
 - 非ssr html渲染
 
-![31612599269_.pic.jpg](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/f2493e474a224b51b0ae7b86756c11aftplv-k3u1fbpfcp-watermark.awebp)
-
 - ssr html渲染
 
-![41612599275_.pic.jpg](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/9d8f003d0d274b3c9da0cc4741b0c364tplv-k3u1fbpfcp-watermark.awebp)
 
 ### 20. 为什么 React 要用 JSX？
 
@@ -11836,8 +11802,6 @@ export default withWindowWidth(MyComponent);
 ```
 
 # 计算机网络篇
-
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/theory-17060785533495.webp)
 
 ## 一、HTTP协议
 
@@ -12061,7 +12025,7 @@ HTTP2的头部压缩是HPACK算法。在客户端和服务器两端建立“字�
 - 首部表在HTTP/2的连接存续期内始终存在，由客户端和服务器共同渐进地更新；
 - 每个新的首部键值对要么被追加到当前表的末尾，要么替换表中之前的值。
 
-例如下图中的两个请求， 请求一发送了所有的头部字段，第二个请求则只需要发送差异数据，这样可以减少冗余数据，降低开销。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/bda10d6c69e74996b6505777d29b9a74tplv-k3u1fbpfcp-watermark.awebp)
+例如下图中的两个请求， 请求一发送了所有的头部字段，第二个请求则只需要发送差异数据，这样可以减少冗余数据，降低开销。 
 
 ### 15. HTTP请求报文的是什么样的？
 
@@ -12072,13 +12036,13 @@ HTTP2的头部压缩是HPACK算法。在客户端和服务器两端建立“字�
 - 空⾏
 - 请求体
 
-![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/4fb5bb2cb1664850b52e32d57af74f2ftplv-k3u1fbpfcp-watermark.awebp) **其中：** （1）请求⾏包括：请求⽅法字段、URL字段、HTTP协议版本字段。它们⽤空格分隔。例如，GET /index.html HTTP/1.1。 （2）请求头部:请求头部由关键字/值对组成，每⾏⼀对，关键字和值⽤英⽂冒号“:”分隔
+ **其中：** （1）请求⾏包括：请求⽅法字段、URL字段、HTTP协议版本字段。它们⽤空格分隔。例如，GET /index.html HTTP/1.1。 （2）请求头部:请求头部由关键字/值对组成，每⾏⼀对，关键字和值⽤英⽂冒号“:”分隔
 
 - User-Agent：产⽣请求的浏览器类型。
 - Accept：客户端可识别的内容类型列表。
 - Host：请求的主机名，允许多个域名同处⼀个IP地址，即虚拟主机。
 
-（3）请求体: post put等请求携带的数据 ![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/eacc55d7152149e99730346f1edfc9abtplv-k3u1fbpfcp-watermark.awebp)
+（3）请求体: post put等请求携带的数据 
 
 ### 16. HTTP响应报文的是什么样的？
 
@@ -12089,7 +12053,6 @@ HTTP2的头部压缩是HPACK算法。在客户端和服务器两端建立“字�
 - 空⾏
 - 响应体
 
-![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/1b0183eb91ce451aa17bd515d047062dtplv-k3u1fbpfcp-watermark.awebp)
 
 - 响应⾏：由网络协议版本，状态码和状态码的原因短语组成，例如 HTTP/1.1 200 OK 。
 - 响应头：响应部⾸组成
@@ -12117,13 +12080,13 @@ HTTP协议具有以下**缺点**：
 
 ### 18. 说一下HTTP 3.0
 
-HTTP/3基于UDP协议实现了类似于TCP的多路复用数据流、传输可靠性等功能，这套功能被称为QUIC协议。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/45a0a2ec0ef143b49d79256cea543418tplv-k3u1fbpfcp-watermark.awebp)
+HTTP/3基于UDP协议实现了类似于TCP的多路复用数据流、传输可靠性等功能，这套功能被称为QUIC协议。 
 
 1. 流量控制、传输可靠性功能：QUIC在UDP的基础上增加了一层来保证数据传输可靠性，它提供了数据包重传、拥塞控制、以及其他一些TCP中的特性。
 2. 集成TLS加密功能：目前QUIC使用TLS1.3，减少了握手所花费的RTT数。
 3. 多路复用：同一物理连接上可以有多个独立的逻辑数据流，实现了数据流的单独传输，解决了TCP的队头阻塞问题。
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/48df233ce8e541efa165160c169b7a70tplv-k3u1fbpfcp-watermark.awebp)
+
 
 1. 快速握手：由于基于UDP，可以实现使用0 ~ 1个RTT来建立连接。
 
@@ -12140,7 +12103,7 @@ HTTP协议有两种连接模式，一种是持续连接，一种非持续连接�
 - 在HTTP/1.0 每发起一个请求，都要新建一次 TCP 连接（三次握手），而且是串行请求，做了无畏的 TCP 连接建立和断开，增加了通信开销。该版本使用的非持续的连接，但是可以在请求时，加上 Connection: keep-a live 来要求服务器不要关闭 TCP 连接。
 - 在HTTP/1.1 提出了**长连接**的通信方式，也叫持久连接。这种方式的好处在于减少了 TCP 连接的重复建立和断开所造成的额外开销，减轻了服务器端的负载。该版本及以后版本默认采用的是持续的连接。目前对于同一个域，大多数浏览器支持同时建立 6 个持久连接。
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/f756e23ecf3a4d2a80d632b5fa8b0b6dtplv-k3u1fbpfcp-watermark.awebp)
+
 
 - **管道网络传输**
 
@@ -12184,7 +12147,7 @@ HTTP 传输的报文必须是一发一收，但是，里面的任务被放在一
 
 ### 1. 什么是HTTPS协议？
 
-超文本传输安全协议（Hypertext Transfer Protocol Secure，简称：HTTPS）是一种通过计算机网络进行安全通信的传输协议。HTTPS经由HTTP进行通信，利用SSL/TLS来加密数据包。HTTPS的主要目的是提供对网站服务器的身份认证，保护交换数据的隐私与完整性。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/10885a9d4d574d7caf3fee1416f623catplv-k3u1fbpfcp-watermark.awebp) HTTP协议采用**明文传输**信息，存在**信息窃听**、**信息篡改**和**信息劫持**的风险，而协议TLS/SSL具有**身份验证**、**信息加密**和**完整性校验**的功能，可以避免此类问题发生。
+超文本传输安全协议（Hypertext Transfer Protocol Secure，简称：HTTPS）是一种通过计算机网络进行安全通信的传输协议。HTTPS经由HTTP进行通信，利用SSL/TLS来加密数据包。HTTPS的主要目的是提供对网站服务器的身份认证，保护交换数据的隐私与完整性。  HTTP协议采用**明文传输**信息，存在**信息窃听**、**信息篡改**和**信息劫持**的风险，而协议TLS/SSL具有**身份验证**、**信息加密**和**完整性校验**的功能，可以避免此类问题发生。
 
 安全层的主要职责就是**对发起的HTTP请求的数据进行加密操作** 和 **对接收到的HTTP的内容进行解密操作**。
 
@@ -12197,8 +12160,6 @@ TLS/SSL的功能实现主要依赖三类基本算法：**散列函数hash**、**
 - 基于散列函数验证信息的完整性
 - 对称加密算法采用协商的秘钥对数据加密
 - 非对称加密实现身份认证和秘钥协商
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/5696ee8ccb0d44b08b812a7c964695b7tplv-k3u1fbpfcp-watermark.awebp)
 
 #### （1）散列函数hash
 
@@ -12230,8 +12191,7 @@ TLS/SSL的功能实现主要依赖三类基本算法：**散列函数hash**、**
 
 首先使用一种 Hash 算法来对公钥和其他信息进行加密，生成一个信息摘要，然后让有公信力的认证中心（简称 CA ）用它的私钥对消息摘要加密，形成签名。最后将原始的信息和签名合在一起，称为数字证书。当接收方收到数字证书的时候，先根据原始信息使用同样的 Hash 算法生成一个摘要，然后使用公证处的公钥来对数字证书中的摘要进行解密，最后将解密的摘要和生成的摘要进行对比，就能发现得到的信息是否被更改了。
 
-这个方法最要的是认证中心的可靠性，一般浏览器里会内置一些顶层的认证中心的证书，相当于我们自动信任了他们，只有这样才能保证数据的安全。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/90da1f506e7040aaba5e1536c1f6c373tplv-k3u1fbpfcp-watermark.awebp)
-
+这个方法最要的是认证中心的可靠性，一般浏览器里会内置一些顶层的认证中心的证书，相当于我们自动信任了他们，只有这样才能保证数据的安全。 
 ### 4. HTTPS通信（握手）过程
 
 HTTPS的通信过程如下：
@@ -12556,7 +12516,7 @@ DNS 服务器中以资源记录的形式存储信息，每一个 DNS 响应报�
 
 ### 1. OSI七层模型
 
-`ISO`为了更好的使网络应用更为普及，推出了`OSI`参考模型。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/c1e8e168d9f249788c74c5b50e0528e2tplv-k3u1fbpfcp-watermark.awebp)
+`ISO`为了更好的使网络应用更为普及，推出了`OSI`参考模型。 
 
 #### （1）应用层
 
@@ -12596,7 +12556,7 @@ DNS 服务器中以资源记录的形式存储信息，每一个 DNS 响应报�
 
 ### 2. TCP/IP五层协议
 
-`TCP/IP`五层协议和`OSI`的七层协议对应关系如下： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/48cd77d608714c298366f4dac77f33fbtplv-k3u1fbpfcp-watermark.awebp)
+`TCP/IP`五层协议和`OSI`的七层协议对应关系如下： 
 
 - **应用层 (application layer)**：直接为应用进程提供服务。应用层协议定义的是应用进程间通讯和交互的规则，不同的应用有着不同的应用层协议，如 HTTP协议（万维网服务）、FTP协议（文件传输）、SMTP协议（电子邮件）、DNS（域名查询）等。
 
@@ -12615,9 +12575,9 @@ DNS 服务器中以资源记录的形式存储信息，每一个 DNS 响应报�
 
 从上图中可以看出，`TCP/IP`模型比`OSI`模型更加简洁，它把`应用层/表示层/会话层`全部整合为了`应用层`。
 
-在每一层都工作着不同的设备，比如我们常用的交换机就工作在数据链路层的，一般的路由器是工作在网络层的。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/8a89b9ddb9d541a880fee0dccd1c03e9tplv-k3u1fbpfcp-watermark.awebp) 在每一层实现的协议也各不同，即每一层的服务也不同，下图列出了每层主要的传输协议： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/2db9226a6cdb4ee48daecd9bc4181b64tplv-k3u1fbpfcp-watermark.awebp)
+在每一层都工作着不同的设备，比如我们常用的交换机就工作在数据链路层的，一般的路由器是工作在网络层的。  在每一层实现的协议也各不同，即每一层的服务也不同，下图列出了每层主要的传输协议： 
 
-同样，`TCP/IP`五层协议的通信方式也是对等通信： ![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/2c0d79ff592242a8af294ce32177c8e3tplv-k3u1fbpfcp-watermark.awebp)
+同样，`TCP/IP`五层协议的通信方式也是对等通信：
 
 ## 六、TCP与UDP
 
@@ -12656,7 +12616,7 @@ UDP 不止支持一对一的传输方式，同样支持一对多，多对多，�
 
 再者网络环境时好时坏，但是 UDP 因为没有拥塞控制，一直会以恒定的速度发送数据。即使网络条件不好，也不会对发送速率进行调整。这样实现的弊端就是在网络条件不好的情况下可能会导致丢包，但是优点也很明显，在某些实时性要求高的场景（比如电话会议）就需要使用 UDP 而不是 TCP。
 
-**5）头部开销小，传输数据报文时是很高效的。** ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/14d246d14aac47919989fc620fbb17ddtplv-k3u1fbpfcp-watermark.awebp)
+**5）头部开销小，传输数据报文时是很高效的。** 
 
 UDP 头部包含了以下几个数据：
 
@@ -12747,7 +12707,7 @@ TCP的拥塞控制机制主要是以下四种机制：
 
 - 拥塞避免未必能够完全避免拥塞，是说在拥塞避免阶段将拥塞窗口控制为按线性增长，使网络不容易出现阻塞。
 - 思路： 让拥塞窗口cwnd缓慢的增大，即每经过一个返回时间RTT就把发送方的拥塞控制窗口加一
-- 无论是在慢开始阶段还是在拥塞避免阶段，只要发送方判断网络出现拥塞，就把慢开始门限设置为出现拥塞时的发送窗口大小的一半。然后把拥塞窗口设置为1，执行慢开始算法。如图所示: ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/06b60b174bb242b498d244002caded1ctplv-k3u1fbpfcp-watermark.awebp) 其中，判断网络出现拥塞的根据就是没有收到确认，虽然没有收到确认可能是其他原因的分组丢失，但是因为无法判定，所以都当做拥塞来处理。
+- 无论是在慢开始阶段还是在拥塞避免阶段，只要发送方判断网络出现拥塞，就把慢开始门限设置为出现拥塞时的发送窗口大小的一半。然后把拥塞窗口设置为1，执行慢开始算法。如图所示:  其中，判断网络出现拥塞的根据就是没有收到确认，虽然没有收到确认可能是其他原因的分组丢失，但是因为无法判定，所以都当做拥塞来处理。
 
 **（3）快速重传**
 
@@ -12757,7 +12717,7 @@ TCP的拥塞控制机制主要是以下四种机制：
 **（4）快速恢复**
 
 - 当发送方连续收到三个重复确认时，就执行“乘法减小”算法，把ssthresh门限减半。但是接下去并不执行慢开始算法。
-- 考虑到如果网络出现拥塞的话就不会收到好几个重复的确认，所以发送方现在认为网络可能没有出现拥塞。所以此时不执行慢开始算法，而是将cwnd设置为ssthresh的大小，然后执行拥塞避免算法。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/d0f5339da8c741d19f416cac2af18e4ftplv-k3u1fbpfcp-watermark.awebp)
+- 考虑到如果网络出现拥塞的话就不会收到好几个重复的确认，所以发送方现在认为网络可能没有出现拥塞。所以此时不执行慢开始算法，而是将cwnd设置为ssthresh的大小，然后执行拥塞避免算法。 
 
 ### 7. TCP的流量控制机制
 
@@ -12784,7 +12744,7 @@ TCP 协议在发送方维持了一个发送窗口，发送窗口以前的报文�
 
 #### （1）三次握手
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/55a81db348584e57abdd01c9555f1d5ftplv-k3u1fbpfcp-watermark.awebp) 三次握手（Three-way Handshake）其实就是指建立一个TCP连接时，需要客户端和服务器总共发送3个包。进行三次握手的主要作用就是为了确认双方的接收能力和发送能力是否正常、指定自己的初始化序列号为后面的可靠性传送做准备。实质上其实就是连接服务器指定端口，建立TCP连接，并同步连接双方的序列号和确认号，交换TCP窗口大小信息。
+三次握手（Three-way Handshake）其实就是指建立一个TCP连接时，需要客户端和服务器总共发送3个包。进行三次握手的主要作用就是为了确认双方的接收能力和发送能力是否正常、指定自己的初始化序列号为后面的可靠性传送做准备。实质上其实就是连接服务器指定端口，建立TCP连接，并同步连接双方的序列号和确认号，交换TCP窗口大小信息。
 
 刚开始客户端处于 Closed 的状态，服务端处于 Listen 状态。
 
@@ -12817,7 +12777,7 @@ TCP 三次握手的建立连接的过程就是相互确认初始序号的过程�
 
 #### （2）四次挥手
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/a4190d0d324b427cb63154d3f84e47bctplv-k3u1fbpfcp-watermark.awebp) 刚开始双方都处于 ESTABLISHED 状态，假如是客户端先发起关闭请求。四次挥手的过程如下：
+ 刚开始双方都处于 ESTABLISHED 状态，假如是客户端先发起关闭请求。四次挥手的过程如下：
 
 - 第一次挥手： 客户端会发送一个 FIN 报文，报文中会指定一个序列号。此时客户端处于 FIN_WAIT1 状态。
 
@@ -12933,7 +12893,6 @@ ws.onclose = function(evt) {
 
 # 浏览器原理篇
 
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/theory.webp)
 
 ## 一、浏览器安全
 
@@ -13084,7 +13043,8 @@ DNS劫持由于涉嫌违法，已经被监管起来，现在很少会有DNS劫�
 
 **（4）进程之间的内容相互隔离。** 进程隔离就是为了使操作系统中的进程互不干扰，每一个进程只能访问自己占有的数据，也就避免出现进程 A 写入数据到进程 B 的情况。正是因为进程之间的数据是严格隔离的，所以一个进程如果崩溃了，或者挂起了，是不会影响到其他进程的。如果进程之间需要进行数据的通信，这时候，就需要使用用于进程间通信的机制了。
 
-**Chrome浏览器的架构图**： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/83e928a4f95d4ebe91d0881b5b2cf94btplv-k3u1fbpfcp-watermark.awebp) 从图中可以看出，最新的 Chrome 浏览器包括：
+**Chrome浏览器的架构图**： 
+ 从图中可以看出，最新的 Chrome 浏览器包括：
 
 - 1 个浏览器主进程
 - 1 个 GPU 进程
@@ -13117,7 +13077,7 @@ DNS劫持由于涉嫌违法，已经被监管起来，现在很少会有DNS劫�
 
 ### 3. 浏览器渲染进程的线程有哪些
 
-浏览器的渲染进程的线程总共有五种： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/d6e583f59dc742b9b4e88cf3a3b0f1d4tplv-k3u1fbpfcp-watermark.awebp) **（1）GUI渲染线程** 负责渲染浏览器页面，解析HTML、CSS，构建DOM树、构建CSSOM树、构建渲染树和绘制页面；当界面需要**重绘**或由于某种操作引发**回流**时，该线程就会执行。
+浏览器的渲染进程的线程总共有五种：  **（1）GUI渲染线程** 负责渲染浏览器页面，解析HTML、CSS，构建DOM树、构建CSSOM树、构建渲染树和绘制页面；当界面需要**重绘**或由于某种操作引发**回流**时，该线程就会执行。
 
 注意：GUI渲染线程和JS引擎线程是互斥的，当JS引擎执行时GUI线程会被挂起，GUI更新会被保存在一个队列中等到JS引擎空闲时立即被执行。
 
@@ -13265,7 +13225,7 @@ self.addEventListener('fetch', e => {
 
 ```
 
-打开页面，可以在开发者工具中的 `Application` 看到 Service Worker 已经启动了： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/0ef126ed3be8463a8e04d4156b2addd9tplv-k3u1fbpfcp-watermark.awebp) 在 Cache 中也可以发现所需的文件已被缓存： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/a223ee3c073d47188ecee7c410ee557ctplv-k3u1fbpfcp-watermark.awebp)
+打开页面，可以在开发者工具中的 `Application` 看到 Service Worker 已经启动了：  在 Cache 中也可以发现所需的文件已被缓存： 
 
 ## 三、浏览器缓存
 
@@ -13279,7 +13239,8 @@ self.addEventListener('fetch', e => {
 - 服务器收到请求后，优先根据 Etag 的值判断被请求的文件有没有做修改，Etag 值一致则没有修改，命中协商缓存，返回 304；如果不一致则有改动，直接返回新的资源文件带上新的 Etag 值并返回 200；
 - 如果服务器收到的请求没有 Etag 值，则将 If-Modified-Since 和被请求文件的最后修改时间做比对，一致则命中协商缓存，返回 304；不一致则返回新的 last-modified 和文件并返回 200；
 
-![业务流程图1.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/3f6837d8d1c74cf2894d8967a20115d9tplv-k3u1fbpfcp-watermark.awebp) 很多网站的资源后面都加了版本号，这样做的目的是：每次升级了 JS 或 CSS 文件后，为了防止浏览器进行缓存，强制改变版本号，客户端浏览器就会重新下载新的 JS 或 CSS 文件 ，以保证用户能够及时获得网站的最新更新。
+
+ 很多网站的资源后面都加了版本号，这样做的目的是：每次升级了 JS 或 CSS 文件后，为了防止浏览器进行缓存，强制改变版本号，客户端浏览器就会重新下载新的 JS 或 CSS 文件 ，以保证用户能够及时获得网站的最新更新。
 
 ### 2. 浏览器资源缓存的位置有哪些？
 
@@ -13445,7 +13406,7 @@ HTML 和 CSS 规范中规定了浏览器解释 html 文档的方式，由 W3C �
 - 当渲染对象被创建并添加到树中，它们并没有位置和大小，所以当浏览器生成渲染树以后，就会根据渲染树来进行布局（也可以叫做回流）。这一阶段浏览器要做的事情是要弄清楚各个节点在页面中的确切位置和大小。通常这一行为也被称为“自动重排”。
 - 布局阶段结束后是绘制阶段，遍历渲染树并调用渲染对象的 paint 方法将它们的内容显示在屏幕上，绘制使用 UI 基础组件。
 
-大致过程如图所示： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/4d69da20c3f84782948226798effc60atplv-k3u1fbpfcp-watermark.awebp)
+大致过程如图所示： 
 
 **注意：** 这个过程是逐步完成的，为了更好的用户体验，渲染引擎将会尽可能早的将内容呈现到屏幕上，并不会等到所有的html 都解析完成之后再去构建和布局 render 树。它是解析完一部分内容就显示一部分内容，同时，可能还在通过网络下载其余内容。
 
@@ -14226,7 +14187,7 @@ socket.listen(server).on('connection', function(client) {
 
 服务器为了能够将工作负载分不到多个服务器来提高网站性能 (负载均衡)等目的，当其受到请求后，会首先根据转发规则来确定请求应该被转发到哪个服务器上，然后将请求转发到对应的真实服务器上。这样本质上起到了对客户端隐藏真实服务器的作用。 一般使用反向代理后，需要通过修改 DNS 让域名解析到代理服务器 IP，这时浏览器无法察觉到真正服务器的存在，当然也就不需要修改配置了。
 
-两者区别如图示： ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/97e92248f2654185808f80b65f3ca0f6tplv-k3u1fbpfcp-watermark.awebp) 正向代理和反向代理的结构是一样的，都是 client-proxy-server 的结构，它们主要的区别就在于中间这个 proxy 是哪一方设置的。在正向代理中，proxy 是 client 设置的，用来隐藏 client；而在反向代理中，proxy 是 server 设置的，用来隐藏 server。
+两者区别如图示：  正向代理和反向代理的结构是一样的，都是 client-proxy-server 的结构，它们主要的区别就在于中间这个 proxy 是哪一方设置的。在正向代理中，proxy 是 client 设置的，用来隐藏 client；而在反向代理中，proxy 是 server 设置的，用来隐藏 server。
 
 ### 4. Nginx的概念及其工作原理
 
@@ -14355,7 +14316,6 @@ document.addEventListener("click", function(e) {
 
 因为 js 是单线程运行的，在代码执行时，通过将不同函数的执行上下文压入执行栈中来保证代码的有序执行。在执行同步代码时，如果遇到异步事件，js 引擎并不会一直等待其返回结果，而是会将这个事件挂起，继续执行执行栈中的其他任务。当异步事件执行完毕后，再将异步事件对应的回调加入到一个任务队列中等待执行。任务队列可以分为宏任务队列和微任务队列，当当前执行栈中的事件执行完毕后，js 引擎首先会判断微任务队列中是否有任务可以执行，如果有就将微任务队首的事件压入栈中执行。当微任务队列中的任务都执行完成后再去执行宏任务队列中的任务。
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/426a3bf11f404821abb636690119621btplv-k3u1fbpfcp-watermark.awebp)
 
 Event Loop 执行顺序如下所示：
 
@@ -14372,7 +14332,7 @@ Event Loop 执行顺序如下所示：
 
 ### 8. 什么是执行栈
 
-可以把执行栈认为是一个存储函数调用的**栈结构**，遵循先进后出的原则。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/391e7d7e880f42d59809dbc16af5d7bftplv-k3u1fbpfcp-watermark.awebp) 当开始执行 JS 代码时，根据先进后出的原则，后执行的函数会先弹出栈，可以看到，`foo` 函数后执行，当执行完毕后就从栈中弹出了。
+可以把执行栈认为是一个存储函数调用的**栈结构**，遵循先进后出的原则。  当开始执行 JS 代码时，根据先进后出的原则，后执行的函数会先弹出栈，可以看到，`foo` 函数后执行，当执行完毕后就从栈中弹出了。
 
 平时在开发中，可以在报错中找到执行栈的痕迹：
 
@@ -14386,21 +14346,19 @@ function bar() {
 bar()
 
 ```
-
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/ab3646b742d946659e4bce34d5af6751tplv-k3u1fbpfcp-watermark.awebp) 可以看到报错在 `foo` 函数，`foo` 函数又是在 `bar` 函数中调用的。当使用递归时，因为栈可存放的函数是有**限制**的，一旦存放了过多的函数且没有得到释放的话，就会出现爆栈的问题
+ 可以看到报错在 `foo` 函数，`foo` 函数又是在 `bar` 函数中调用的。当使用递归时，因为栈可存放的函数是有**限制**的，一旦存放了过多的函数且没有得到释放的话，就会出现爆栈的问题
 
 ```javascript
 function bar() {  bar()}bar()
 
 ```
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/cac7e59102dc4c3a9efa53aecd64bf9dtplv-k3u1fbpfcp-watermark.awebp)
 
 ### 9. Node 中的 Event Loop 和浏览器中的有什么区别？process.nextTick 执行顺序？
 
 Node 中的 Event Loop 和浏览器中的是完全不相同的东西。
 
-Node 的 Event Loop 分为 6 个阶段，它们会按照**顺序**反复运行。每当进入某一个阶段的时候，都会从对应的回调队列中取出函数去执行。当队列为空或者执行的回调函数数量到达系统设定的阈值，就会进入下一阶段。 ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/ed6d249f54e242fe9dc267f03fa156d3tplv-k3u1fbpfcp-watermark.awebp)
+Node 的 Event Loop 分为 6 个阶段，它们会按照**顺序**反复运行。每当进入某一个阶段的时候，都会从对应的回调队列中取出函数去执行。当队列为空或者执行的回调函数数量到达系统设定的阈值，就会进入下一阶段。 
 
 （1）**Timers（计时器阶段）**：初次进入事件循环，会从计时器阶段开始。此阶段会判断是否存在过期的计时器回调（包含 setTimeout 和 setInterval），如果存在则会执行所有过期的计时器回调，执行完毕后，如果回调中触发了相应的微任务，会接着执行所有微任务，执行完微任务后再进入 Pending callbacks 阶段。
 
@@ -14447,7 +14405,7 @@ fs.readFile(__filename, () => {
 
 在上述代码中，`setImmediate` 永远**先执行**。因为两个代码写在 IO 回调中，IO 回调是在 poll 阶段执行，当回调执行完毕后队列为空，发现存在 `setImmediate` 回调，所以就直接跳转到 check 阶段去执行回调了。
 
-上面都是 macrotask 的执行情况，对于 microtask 来说，它会在以上每个阶段完成前**清空** microtask 队列，下图中的 Tick 就代表了 microtask ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/8ea27044a0124facaab3e4a8da89d709tplv-k3u1fbpfcp-watermark.awebp)
+上面都是 macrotask 的执行情况，对于 microtask 来说，它会在以上每个阶段完成前**清空** microtask 队列，下图中的 Tick 就代表了 microtask 
 
 ```javascript
 setTimeout(() => {
@@ -14606,8 +14564,6 @@ enum AllocationSpace {
 
 # 前端性能优化篇
 
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/performance.webp)
-
 
 
 ## 一、CDN
@@ -14665,7 +14621,7 @@ CDN和DNS有着密不可分的联系，先来看一下DNS的解析域名过程�
 
 如果缓存服务器没有用户想要的内容，那么缓存服务器就会向它的上一级缓存服务器请求内容，以此类推，直到获取到需要的资源。最后如果还是没有，就会回到自己的服务器去获取资源。
 
-![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/a4635b395fb64aaab8417f63e64291d4tplv-k3u1fbpfcp-watermark.awebp) CNAME（意为：别名）：在域名解析中，实际上解析出来的指定域名对应的IP地址，或者该域名的一个CNAME，然后再根据这个CNAME来查找对应的IP地址。
+ CNAME（意为：别名）：在域名解析中，实际上解析出来的指定域名对应的IP地址，或者该域名的一个CNAME，然后再根据这个CNAME来查找对应的IP地址。
 
 ### 4. CDN的使用场景
 
@@ -14707,7 +14663,7 @@ CDN和DNS有着密不可分的联系，先来看一下DNS的解析域名过程�
 
 （4）图片加载条件：`img.offsetTop < window.innerHeight + document.body.scrollTop;`
 
-**图示：** ![img](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/efbcb31418be45eaa848d107b107c4ebtplv-k3u1fbpfcp-watermark.awebp) **代码实现：**
+**图示：**  **代码实现：**
 
 ```javascript
 <div class="container">
@@ -15152,7 +15108,7 @@ import { a } from './test.js'
 
 # 手写代码篇
 
-![](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/jsdemo-17060784447393.webp)
+
 
 
 
@@ -19414,7 +19370,7 @@ console.log(instance.getSuperValue());
 
 输出结果：true
 
-实际上，这段代码就是在实现原型链继承，SubType继承了SuperType，本质是重写了SubType的原型对象，代之以一个新类型的实例。SubType的原型被重写了，所以instance.constructor指向的是SuperType。具体如下： ![image.png](%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E9%AB%98%E9%A2%91%E9%9D%A2%E8%AF%95%E9%A2%98%E5%90%88%E9%9B%86.assets/8823cf14d07040379eb890c09255c35dtplv-k3u1fbpfcp-watermark.awebp)
+实际上，这段代码就是在实现原型链继承，SubType继承了SuperType，本质是重写了SubType的原型对象，代之以一个新类型的实例。SubType的原型被重写了，所以instance.constructor指向的是SuperType。具体如下： 
 
 
 
