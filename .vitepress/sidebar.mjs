@@ -8,6 +8,11 @@ export default {
       text: 'MySql',
       link: '/computer/tool/MySql.md',
     },
+    {
+      text: '前端面试题',
+      link: '/computer/tool/前端开发高频面试题合集.md',
+    },
+
   ],
   '/competition/lanqiaoAlgo/': [
     {
