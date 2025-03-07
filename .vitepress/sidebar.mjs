@@ -46,4 +46,26 @@ export default {
       link: '/computer/node.js/nrm.md',
     },
   ],
+  '/lab/backend/': [
+    {
+      text: '后端简介',
+      link: '/lab/backend/index.md',
+    },
+    {
+      text: '后端学习-1',
+      link: '/lab/backend/study1.md',
+    },
+    {
+      text: '后端学习1-1(面向对象）',
+      link: '/lab/backend/study1-1.md',
+    },
+    {
+      text: '后端考核',
+      link: '/lab/backend/examine.md',
+    },
+    {
+      text: '后端学习-2',
+      link: '/lab/backend/study2.md',
+    },
+  ],
 };
