@@ -5,12 +5,24 @@ export default {
       link: '/computer/tool/index.md',
     },
     {
-      text: 'MySql',
+      text: 'MySql-1',
       link: '/computer/tool/MySql.md',
+    },
+    {
+      text: 'MySql-2',
+      link: '/computer/tool/MySql2.md',
+    },
+    {
+      text: 'MySql-3',
+      link: '/computer/tool/MySql3.md',
     },
     {
       text: '前端面试题',
       link: '/computer/tool/FrondInterview.md',
+    },
+    {
+      text: 'docker常用命令',
+      link: '/computer/tool/docker常用命令.md',
     },
 
   ],
