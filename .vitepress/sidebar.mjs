@@ -6,7 +6,7 @@ export default {
     },
     {
       text: 'MySql-1',
-      link: '/computer/tool/MySql.md',
+      link: '/computer/tool/MySql1.md',
     },
     {
       text: 'MySql-2',
