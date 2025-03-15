@@ -122,7 +122,7 @@ let url = image.src;
 image.id == 'main_img';
 
 let f = document.querySelector('#form');
-f.action = 'https://example.com';
+// f.action = 'https://example.com';
 f.method = 'POST';
 
 let button = document.querySelector('#submit');
