@@ -4,6 +4,7 @@ import nav from './nav.mjs'
 
 export default defineConfig({
   cacheDir: './.vitepress/.vite',
+  ignoreDeadLinks: true,
   title: "Carlos博客",
   description: "A VitePress Site",
   head: [
