@@ -241,7 +241,6 @@ let img = document.createElement('img');
 para.append("World!")
 para.prepend("Hello, ")
 
-img.src = "https://example.com/image.jpg";
 ```
 
 ```js{1-5|1-6|1-7|all}
