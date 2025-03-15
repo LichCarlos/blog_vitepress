@@ -26,6 +26,28 @@ export default {
     },
 
   ],
+  '/competition/lanqiaoWeb/': [
+    {
+      text: '16届蓝桥杯-备赛大纲',
+      link: '/competition/lanqiaoWeb/index.md',
+    },
+    {
+      text: 'JavaScript-API',
+      link: '/competition/lanqiaoWeb/JavaScript-API.md',
+    },
+    {
+      text: '浏览器API',
+      link: '/competition/lanqiaoWeb/浏览器API.md',
+    },
+    {
+      text: 'Vue3',
+      link: '/competition/lanqiaoWeb/Vue3.md',
+    },
+    {
+      text: '异步编程',
+      link: '/competition/lanqiaoWeb/异步编程.md',
+    },
+  ],
   '/competition/lanqiaoAlgo/': [
     {
       text: '蓝桥杯备赛大纲',

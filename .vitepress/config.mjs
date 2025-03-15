@@ -20,7 +20,6 @@ export default defineConfig({
   themeConfig: {
     nav: nav,
     sidebar: sidebar,
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
@@ -70,14 +69,19 @@ export default defineConfig({
   srcDir: './docs',
   lastUpdated: true,
   markdown: {
-    lineNumbers: true,//显示代码行数
-    container: {
-      tipLabel: '提示',
-      warningLabel: '警告',
-      dangerLabel: '危险',
-      infoLabel: '信息',
-      detai1sLabel: '详细信息',
-    }
+    lineNumbers: true,
+    options: {
+      syntaxHighlight: {
+        highlighter: 'shiki', // 使用 shiki 作为高亮器
+      },
+      container: {
+        tipLabel: '提示',
+        warningLabel: '警告',
+        dangerLabel: '危险',
+        infoLabel: '信息',
+        detailsLabel: '详细信息',
+      },
+    },
   },
   cleanUrls: true,
 })
