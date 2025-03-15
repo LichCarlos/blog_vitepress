@@ -3,6 +3,7 @@ import sidebar from './sidebar.mjs'
 import nav from './nav.mjs'
 
 export default defineConfig({
+  cacheDir: './.vitepress/.vite',
   title: "Carlos博客",
   description: "A VitePress Site",
   head: [
