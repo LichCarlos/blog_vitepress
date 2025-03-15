@@ -122,7 +122,7 @@ let url = image.src;
 image.id == 'main_img';
 
 let f = document.querySelector('#form');
-f.action = //测试的网址
+f.action = ""//测试的网址
 f.method = 'POST';
 
 let button = document.querySelector('#submit');
