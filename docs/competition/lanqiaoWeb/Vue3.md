@@ -195,7 +195,7 @@ const fontSize = ref(30)
 
 📢蓝桥杯采用cdn引入 不要忘记导入Vue的API！
 
-1. `setup()`和`<script setup>`语法
+1. `setup()`和`<script setup> </script>`语法
 
 ```vue
 <script>
