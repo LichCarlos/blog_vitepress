@@ -15,6 +15,7 @@
     "busuanzi.pure.js": "^1.0.3",
     "canvas-confetti": "^1.9.3",
     "medium-zoom": "^1.1.0",
+    "mermaid": "^11.6.0",
     "prismjs": "^1.30.0",
     "shiki": "^3.2.1"
   },

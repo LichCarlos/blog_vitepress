@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 import sidebar from './sidebar.mjs'
 import nav from './nav.mjs'
-
 export default defineConfig({
   cacheDir: './.vitepress/.vite',
   ignoreDeadLinks: true,

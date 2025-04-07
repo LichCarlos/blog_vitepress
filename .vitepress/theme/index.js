@@ -1,7 +1,6 @@
 import Layout from './MyLayout.vue';
 import confetti from "./confetti.vue";
 import VisitorPanel from "./VisitorPanel.vue";
-import busuanzi from "busuanzi.pure.js";
 import mediumZoom from "medium-zoom";
 import { onMounted, watch, nextTick } from "vue";
 import { useRoute } from "vitepress";
