@@ -1,25 +1,8 @@
 # Vue3
 
 蓝桥杯Web组 省赛备赛
-
-## 浏览器API
-
-+ CSS选择器
-
-+ 文档结构与遍历
-
-+ 属性
-
-+ 元素内容
-
-+ 操作节点
-
-+ 操作样式
-
-
 ## Vue3
 
-<v-clicks>
 
 + 模板语法
 
@@ -29,17 +12,13 @@
 
 + 组件API
 
-</v-clicks>
-
-
-
 ---
 
 ### Vue3学习最佳资源
 
 官方文档：https://vuejs.org
 
-![Vue 3 Document](./assets/Vue3-doc.png) {.!w-7/8}
+![Vue 3 Document](./assets/Vue3-doc.png) 
 
 ---
 
@@ -47,7 +26,7 @@
 
 Vue 使用基于 HTML 的模板语法，允许您**声明性**地将渲染的 DOM 绑定到底层组件实例的数据。所有 Vue 模板都是语法有效的 HTML，可以被符合规范的浏览器和 HTML 解析器解析。
 
-<v-clicks>
+
 
 1. 数据绑定
 
@@ -69,11 +48,10 @@ const dynamicId = ref('foo')
 </template>
 ```
 
-</v-clicks>
 
 ---
 
-<v-clicks>
+
 
 3. 多属性绑定
 
@@ -92,15 +70,14 @@ const items = {
 
 4. 完整的指令语法
 
-![指令语法](./assets/指令语法.png) {.!w-1/2}
+![指令语法](./assets/指令语法.png)
 
 详见：https://vuejs.org/guide/essentials/template-syntax.html
 
-</v-clicks>
+
 
 ---
 
-<v-clicks>
 
 5. 条件渲染（操作DOM）
 
@@ -135,7 +112,7 @@ const items = {
 
 详见：https://vuejs.org/guide/essentials/list.html
 
-</v-clicks>
+
 
 ---
 
@@ -169,7 +146,7 @@ const items = {
 
 ---
 
-<v-clicks>
+
 
 9. `class`的绑定
 
@@ -206,7 +183,7 @@ const fontSize = ref(30)
 <input v-model="message" placeholder="edit me" />
 ```
 
-</v-clicks>
+
 
 
 
@@ -215,7 +192,6 @@ const fontSize = ref(30)
 
 ## 响应式API
 
-<v-clicks>
 
 📢蓝桥杯采用cdn引入 不要忘记导入Vue的API！
 
@@ -241,13 +217,13 @@ export default {
 
 使用SFC（单文件组件）时，可以使用`<script setup>`语法糖，但是因为我们的蓝桥杯**不使用构建工具**，所以应该用不上了！
 
-</v-clicks>
+
 
 ---
 
 2. `ref()`和`reactive()`
 
-<v-clicks>
+
 
 ````md magic-move
 ```vue
@@ -296,7 +272,7 @@ export default {
 
 详见：https://vuejs.org/guide/essentials/reactivity-fundamentals.html#deep-reactivity
 
-</v-clicks>
+
 
 ---
 
@@ -331,7 +307,7 @@ const publishedBooksMessage = computed(() => {
 
 计算属性**自动跟踪**其响应式依赖，默认**只读**。详见https://vuejs.org/guide/essentials/computed.html。
 
-</v-clicks>
+
 
 ---
 
@@ -415,7 +391,7 @@ export default {
 
 ### 2. 事件传递
 
-<v-clicks>
+
 
 ````md magic-move
 ```vue
@@ -458,7 +434,7 @@ export default {
 
 详见：https://vuejs.org/guide/components/events.html
 
-</v-clicks>
+
 
 ---
 
@@ -499,7 +475,6 @@ export default {
 
 ### 这里略去不讲，但你应该了解的话题
 
-<v-clicks>
 
 1. **可写的计算属性**：https://vuejs.org/guide/essentials/computed.html#writable-computed
 
@@ -517,4 +492,3 @@ export default {
 
 8. **逻辑复用**：https://vuejs.org/guide/reusability/composables.html
 
-</v-clicks>

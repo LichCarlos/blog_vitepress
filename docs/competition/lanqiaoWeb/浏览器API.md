@@ -5,8 +5,6 @@
 
 ## 浏览器API
 
-<v-clicks>
-
 + CSS选择器
 
 + 文档结构与遍历
@@ -19,13 +17,11 @@
 
 + 操作样式
 
-</v-clicks>
 
 ---
 
 ## CSS选择器
 
-<v-clicks>
 
 浏览器提供了 `document.querySelector` 和 `document.querySelectorAll` 两个方法，可以用来根据 CSS 选择器来获取 DOM 元素。
 
@@ -59,11 +55,11 @@ img + p.caption  // 紧邻
 img ~ p.caption  // 兄弟
 ```
 
-</v-clicks>
+
 
 ---
 
-## 练习 —— `空后、大子、加紧跟、浪同辈`
+## 练习
 
 ```html{all|2-7|2,3,7|2-7|2,3,7|3,7|3,7|5|5,6}{lines:true}
 <h2>
@@ -75,7 +71,6 @@ img ~ p.caption  // 兄弟
   </div>
 </h2>
 ```
-<v-clicks at="-7">
 
 1. `h2 img`
 2. `h2 > img`
@@ -86,13 +81,11 @@ img ~ p.caption  // 兄弟
 7. `#p1 + #p3`
 8. `#p1 ~ #p3`
 
-</v-clicks>
 
 ---
 
 ### 文档结构与遍历
 
-<v-clicks>
 
 **`Element`对象**上的方法：
 
@@ -106,13 +99,11 @@ img ~ p.caption  // 兄弟
 这些方法都是不带Text节点、Comment节点的，如果想学习**Node对象上定义**的节点树属性，可参阅https://developer.mozilla.org/en-US/docs/Web/API/Node。
 
 
-</v-clicks>
-
 ---
 
 ### 属性
 
-<v-clicks>
+
 
 #### HTML属性 {.!mt-4}
 
@@ -141,20 +132,18 @@ spinner.classList.remove('show');
 spinner.classList.toggle('show');
 ```
 
-</v-clicks>
-
 ---
 
 ### 通用属性管理 {.!mb-4}
 
-<v-clicks>
+
 
 - `getAttribute(name)`：获取属性值
 - `setAttribute(name, value)`：设置属性值
 - `removeAttribute(name)`：移除属性
 - `hasAttribute(name)`：检查属性是否存在
 
-</v-clicks>
+
 
 ---
 
@@ -202,8 +191,6 @@ Inserted here
 ```
 
 ````
-<v-clicks at="-5" class="!mt-6">
-
 1. `innerHTML`
 2. `ele.innerHTML = "Inserted here" + ele.innerHTML`
 3. `ele.innerHTML += "Inserted here"`
@@ -211,19 +198,14 @@ Inserted here
 5. `ele.outerHTML = "Inserted here" + ele.outerHTML`
 6. `ele.outerHTML += "Inserted here"`
 
-</v-clicks>
-
-<v-clicks>
-
 `textContent`用于获取元素中的纯文本内容，或者向文档中插入纯文本内容。
 
-</v-clicks>
 
 ---
 
 ### 创建、插入和删除节点
 
-<v-clicks>
+
 
 使用`document.createElement(tagName)`创建一个新元素；
 
@@ -256,13 +238,13 @@ para.removeChildren();  // 删除所有子节点；还可以怎样操作？
 
 ````
 
-</v-clicks>
+
 
 ---
 
-## 操作CSS {.!mb-6}
+## 操作CSS
 
-<v-clicks>
+
 
 ### 基于class的样式
 
@@ -285,12 +267,11 @@ function displayAt(tooltip, x, y) {
 如果要对一个带单位的style做数值计算，需要做**两次转换**。
 
 
-</v-clicks>
 ---
 
 ### 计算样式
 
-<v-clicks>
+
 
 ⚠️ 计算属性是**只读**的，任何指定大小的属性都将以**像素**度量，且**包含单位**。
 
@@ -301,4 +282,4 @@ let fontSize = window.getComputedStyle(title).fontSize;
 console.log(fontSize);  // "16px"
 ```
 
-</v-clicks>
+
