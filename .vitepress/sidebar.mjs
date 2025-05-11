@@ -26,6 +26,26 @@ export default {
       link: '/computer/tool/面试笔记-前端.md',
     },
     {
+      text: '面试笔记-前端-手写Promise',
+      link: '/computer/tool/面试笔记-前端-手写Promise.md',
+    },
+    {
+      text: '面试笔记-前端-函数柯里化',
+      link: '/computer/tool/面试笔记-前端-函数柯里化',
+    },
+    {
+      text: '面试笔记-前端-设计模式',
+      link: '/computer/tool/面试笔记-前端-设计模式',
+    },
+    {
+      text: '面试笔记-前端-React',
+      link: '/computer/tool/面试笔记-前端-React',
+    },
+    {
+      text: '面试笔记-前端-面试题',
+      link: '/computer/tool/面试笔记-前端-面试题.md',
+    },
+    {
       text: 'docker常用命令',
       link: '/computer/tool/docker常用命令.md',
     },
@@ -119,6 +139,10 @@ export default {
     {
       text: '前端学习-2',
       link: '/lab/web/study2.md',
+    },
+    {
+      text: 'React-源码',
+      link: '/lab/web/React-源码.md',
     },
   ],
 };
