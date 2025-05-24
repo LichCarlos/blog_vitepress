@@ -46,6 +46,26 @@ export default {
       link: '/computer/tool/面试笔记-前端-面试题.md',
     },
     {
+      text: '面试笔记-前端-面经-1',
+      link: '/computer/tool/面试笔记-前端-针对面经收集-1.md',
+    },
+    {
+      text: '面试笔记-前端-面经-2',
+      link: '/computer/tool/面试笔记-前端-针对面经收集-2.md',
+    },
+    {
+      text: '面试笔记-前端-面经-3',
+      link: '/computer/tool/面试笔记-前端-针对面经收集-3.md',
+    },
+    {
+      text: '面试笔记-前端-面经-4',
+      link: '/computer/tool/面试笔记-前端-针对面经收集-4.md',
+    },
+    {
+      text: '面试笔记-前端-面经-5',
+      link: '/computer/tool/面试笔记-前端-针对面经收集-5.md',
+    },
+    {
       text: 'docker常用命令',
       link: '/computer/tool/docker常用命令.md',
     },

@@ -1,0 +1,24 @@
+<!-- 个大整数相加，例如：98765432123456789 + 12345678987654321 -->
+
+<script>
+  function add(a, b) {
+    let carry = 0;
+    let i = a.length - 1;
+    let j = b.length - 1;
+    let result = '';
+
+    while (i >= 0 || j >= 0 || carry > 0) {
+      const digitA = i > 0 ? parseInt(a[i--]) : 0;
+      const digitB = j > 0 ? parseInt(b[j--]) : 0;
+      const sum = digitA + digitB + carry;
+      result = (sum % 10) + result;
+      carry = Math.floor(sum / 10);
+    }
+    return result;
+  }
+  // console.log(add('98765432123456789', '12345678987654321'));
+
+  console.log(Math.random());
+</script>
+
+<!-- 算法思路，nodejs的/debug能力，前端基础（es6） -->
