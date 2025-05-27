@@ -163,7 +163,8 @@ symbol：抛出错误
 ```
 
 ## 深浅拷贝
-
+**浅拷贝**：浅拷贝是指创建一个新对象，这个新对象的属性是原对象属性的引用。浅拷贝只复制对象的第一层属性，如果属性是对象，则只复制其引用，原对象和新对象共享同一块内存空间。
+**深拷贝**：深拷贝是指创建一个新对象，并递归地复制所有嵌套对象的属性，使得新对象和原对象完全独立，互不影响。
 <h4>浅拷贝</h4>
 创建一个新对象，复制原有对象的基本数据类型的值
 
@@ -300,3 +301,96 @@ promise是一个**容器**保存着未来结束事件的结果。语法上说，
 promise采用里三大技术手段解决回调地狱，**回调函数延迟绑定**、**返回值穿透**、**错误冒泡**。
 
 ## Generator和async/await
+
+### Generator生成器
+带*号的函数，配合yield关键字暂停或执行函数
+```javascript
+function *generator(){
+  console.log('hello world')
+  let a = yiled 1;
+  let b = yiled (function(){
+    return 2;
+  })();
+  return 3;
+}
+
+ver  gen = generator();
+console.log(typeof gen)//返回object而不是function
+console.log(gen.next())
+console.log(gen.next())
+console.log(gen.next())
+console.log(gen.next())
+```
+
+### Generator和thunk
+### Generator和promise
+
+## 实现一个EventEmitter
+
+## 实现Promise/A+规范
+
+## js垃圾回收机制
+### 内存管理
+ 1. 分配系统的内存空间
+ 2. 使用分配到的内存进行读写操作
+ 3. 释放系统分配的内存空间
+
+内存分配：
+简单数据类型，内存保存在（stack）中
+
+简单类型会占据固定的内存空间，通过值来访问
+
+复杂数据类型，内存保存在（heap）中
+
+引用类型大小不定，栈内存存放指向堆内存的对象，通过引用来访问
+
+
+
+###  垃圾回收 
+新生代内存回收：
+在64位操作系统分配32mb
+老生代内存回收：
+新生代变量进过回收后依然存在，就会放在老生代内存中，进过Scavenge算法回收就会晋升为老生代的内存对象
+采用Mark-Sweep、Mark-Compact策略进行回收
+
+### 内存泄漏
+ 1. 过多的缓存未被释放
+ 2. 闭包太多未被释放
+ 3. 定时器/回调太多未释放
+ 4. 太多无效dom未释放
+ 5. 全局变量太多未释放
+
+ ## 事件轮询 EventLoop
+ 事件循环机制是JavaScript引擎在单线程、非阻塞中执行异步操作的一种机制。
+ ### 浏览器端
+ 1. 调用栈，负责跟踪所有要执行的代码
+ 1. 事件队列负责将新的function发送到队列中处理
+ 1. 每当调用事件队列（event queue）中的异步函数，都会发送到浏览器API
+
+ javascript本身是单线程的，浏览器API充当独立的线程。
+
+ EventLoop：通过内部两个队列实现Event Queue和放进来的异步任务。
+ 以setTimeout为例的宏任务（setTimeout，setInterval，setImmediate，I/O，UI。rendering，event listner）放在（macrotask queue）和以promise为代表的微任务（promise、nextTick、process、Object.observe，MutationObserver）放在（microtask queue）
+
+
+一次Evebtloop循环会处理一个红任务和这次红任务产生的所有微任务
+
+## JS代码是如何编译执行的
+语言有编译型语言和解释型语言
+编译型语言（java、c++）会先将代码编译成机器码，然后执行
+解释型语言（JavaScript、ruby）会直接执行代码、但运行时需要转换
+### v8引擎
+ 1. parse阶段：将代码转换成AST树
+ 2. lgnition阶段：将AST树转换成字节码
+ 3. TurboFan阶段：转换为机器码
+ 4. Orinco阶段：垃圾回收。
+
+ ## 宏任务和微任务的运行机制
+
+ 在eventloop中每次循环被成为tick
+ 执行栈选择最先进入的宏任务，执行同步代码、检查是否有微任务，有微任务，将微任务栈执行至空、浏览器端渲染页面、开启下一轮循环（tick）执行宏任务的异步代码
+
+ 宏任务：
+ 渲染事件、用户交互事件、setTimeout、setInterval、网络请求，文件读写等
+
+ ## Process.nextTick
