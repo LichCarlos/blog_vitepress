@@ -60,7 +60,7 @@ console.log(typeof {});//object
 console.log(typeof console);//object
 console.log(typeof console.log)//function
 ```
-#### instaceog
+#### instaceof
 <h4>instanceof</h4>
 
 ```js
