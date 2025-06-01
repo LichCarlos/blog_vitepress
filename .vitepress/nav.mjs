@@ -4,6 +4,27 @@ export default [
     link: '/'
   },
   {
+    text: '喵喵工具',
+    items: [
+      {
+        text: '学长的喵喵工具',
+        link: '/tool/tool/index.md',
+      },
+      {
+        text: 'Markdown',
+        link: '/tool/Markdown/index.md',
+      },
+      {
+        text: 'node.js',
+        link: '/tool/node.js/index.md',
+      },
+      {
+        text: '前端面试笔记',
+        link: '/tool/interview-web/index.md',
+      },
+    ]
+  },
+  {
     text: '计算机基础',
     items: [
       {
@@ -21,19 +42,7 @@ export default [
       {
         text: '数据结构',
         link: '/computer/dataStructure/index.md',
-      },
-      {
-        text: 'Markdown',
-        link: '/computer/Markdown/index.md',
-      },
-      {
-        text: 'node.js',
-        link: '/computer/node.js/index.md',
-      },
-      {
-        text: '学长的喵喵工具',
-        link: '/computer/tool/index.md',
-      },
+      }
     ],
   },
   {

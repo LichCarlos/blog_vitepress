@@ -1,87 +1,82 @@
-export default {
-  '/computer/tool/': [
-    {
-      text: '学长的喵喵工具',
-      link: '/computer/tool/index.md',
-    },
 
+export default {
+  '/tool/interview-web': [
     {
-      text: 'MySql-1',
-      link: '/computer/tool/MySql1.md',
-    },
-    {
-      text: 'MySql-2',
-      link: '/computer/tool/MySql2.md',
-    },
-    {
-      text: 'MySql-3',
-      link: '/computer/tool/MySql3.md',
-    },
-    {
-      text: '前端面试题',
-      link: '/computer/tool/FrondInterview.md',
+      text: '前言',
+      link: '/tool/interview-web/index.md',
     },
     {
       text: '面试笔记-前端',
-      link: '/computer/tool/面试笔记-前端.md',
+      link: '/tool/interview-web/面试笔记-前端.md',
     },
     {
       text: '面试笔记-前端-手写Promise',
-      link: '/computer/tool/面试笔记-前端-手写Promise.md',
+      link: '/tool/interview-web/面试笔记-前端-手写Promise.md',
     },
     {
       text: '面试笔记-前端-函数柯里化',
-      link: '/computer/tool/面试笔记-前端-函数柯里化',
+      link: '/tool/interview-web/面试笔记-前端-函数柯里化',
     },
     {
       text: '面试笔记-前端-设计模式',
-      link: '/computer/tool/面试笔记-前端-设计模式',
+      link: '/tool/interview-web/面试笔记-前端-设计模式',
     },
     {
       text: '面试笔记-前端-React',
-      link: '/computer/tool/面试笔记-前端-React',
+      link: '/tool/interview-web/面试笔记-前端-React',
     },
     {
       text: '面试笔记-前端-面试题',
-      link: '/computer/tool/面试笔记-前端-面试题.md',
+      link: '/tool/interview-web/面试笔记-前端-面试题.md',
     },
     {
       text: '面试笔记-前端-面经-1',
-      link: '/computer/tool/面试笔记-前端-针对面经收集-1.md',
+      link: '/tool/interview-web/面试笔记-前端-针对面经收集-1.md',
     },
     {
       text: '面试笔记-前端-面经-2',
-      link: '/computer/tool/面试笔记-前端-针对面经收集-2.md',
+      link: '/tool/interview-web/面试笔记-前端-针对面经收集-2.md',
     },
     {
       text: '面试笔记-前端-面经-3',
-      link: '/computer/tool/面试笔记-前端-针对面经收集-3.md',
+      link: '/tool/interview-web/面试笔记-前端-针对面经收集-3.md',
     },
     {
       text: '面试笔记-前端-面经-4',
-      link: '/computer/tool/面试笔记-前端-针对面经收集-4.md',
+      link: '/tool/interview-web/面试笔记-前端-针对面经收集-4.md',
     },
     {
       text: '面试笔记-前端-面经-5',
-      link: '/computer/tool/面试笔记-前端-针对面经收集-5.md',
-    },
-    {
-      text: 'docker常用命令',
-      link: '/computer/tool/docker常用命令.md',
+      link: '/tool/interview-web/面试笔记-前端-针对面经收集-5.md',
     },
   ],
-  '/computer/node.js/': [
+  '/tool/tool/': [
+    {
+      text: '学长的喵喵工具',
+      link: '/tool/tool/index.md',
+    },
+    {
+      text: 'docker常用命令-开发进阶',
+      link: '/tool/tool/docker.md',
+    },
+    {
+      text: 'git常用命令-日常学习-项目必备',
+      link: '/tool/tool/git.md',
+
+    }
+  ],
+  '/tool/node.js/': [
     {
       text: 'Node.js',
-      link: '/computer/node.js/index.md',
+      link: '/tool/node.js/index.md',
     },
     {
       text: 'npm',
-      link: '/computer/node.js/npm.md',
+      link: '/tool/node.js/npm.md',
     },
     {
       text: 'nrm',
-      link: '/computer/node.js/nrm.md',
+      link: '/tool/node.js/nrm.md',
     },
   ],
   '/competition/lanqiaoWeb/': [
@@ -139,13 +134,26 @@ export default {
       link: '/lab/backend/study1-1.md',
     },
     {
+      text: 'MySql-1',
+      link: '/lab/backend/MySql1.md',
+    },
+    {
+      text: 'MySql-2',
+      link: '/lab/backend/MySql2.md',
+    },
+    {
+      text: 'MySql-3',
+      link: '/lab/backend/MySql3.md',
+    },
+    {
       text: '后端考核',
       link: '/lab/backend/examine.md',
     },
+
     {
       text: '后端学习-2',
       link: '/lab/backend/study2.md',
-    },
+    }
   ],
   '/lab/web/': [
     {
@@ -164,5 +172,21 @@ export default {
       text: 'React-源码',
       link: '/lab/web/React-源码.md',
     },
+    {
+      text: '前端工程化-webpack',
+      link: '/lab/web/webpack.md',
+    }
   ],
+  '/computer/dataStructure/': [
+    {
+      text: '前言',
+      link: '/computer/dataStructure/index.md',
+    },
+    {
+      text: '复杂度',
+      link: '/computer/dataStructure/数据结构-1.md',
+    },
+    {
+    }
+  ]
 };
