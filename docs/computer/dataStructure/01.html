@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul id="ul"></ul>
+  <script>
+
+    //total数据条数，datas每一页的数据条数
+
+    // _cretiem(13,2)
+    /*如
+    <ul id="ul">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    </ul>
+    */
+    const _cretiem = (total, datasPerPage) => {
+      const ul = document.querySelector("ul");
+      if (!ul) {
+        console.error("未找到 <ul> 元素");
+        return;
+      }
+
+      const totalPage = Math.ceil(total / datasPerPage);
+
+      for (let index = 0; index < totalPage; index++) {
+        const li = document.createElement("li");
+        li.innerHTML = index + 1;
+        ul.appendChild(li);
+      }
+    };
+
+    _cretiem(15, 2); // 创建 7 个 li，分别显示 1 到 7
+  </script>
+</body>
+
+</html>

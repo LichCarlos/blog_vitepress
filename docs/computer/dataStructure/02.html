@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  window.onload = function () {
+    const json = {
+      tag: "div",
+      attrs: {
+        id: "app",
+        className: "container"
+      },
+      children: [{
+        tag: "h1",
+        text: "Hello World"
+      },
+      {
+        tag: "p",
+        text: "This is a paragraph"
+      }, {
+        tag: "ul",
+        children: [{
+          tag: "li",
+          text: "Item 1"
+        },
+        {
+          tag: "li",
+          text: "Item 2"
+        },
+        {
+          tag: "li",
+          text: "Item 3"
+        }]
+      }]
+    }
+    function jsonToDom(vnode) {
+      if (typeof vnode === 'string' || typeof vnode === 'number') {
+        return document.createTextNode(String(vnode));
+      } else {
+        const _dom = document.createElement(vnode.tag);
+        if (vnode.attrs) {
+          Object.entries(vnode.attrs).forEach(([key, value]) => {
+            _dom.setAttribute(key, value);
+          })
+        };
+        vnode.childNodes.forEach(child => _dom.appendChild(jsonToDom(child)))
+        return _dom;
+      }
+    }
+    console.log(jsonToDom(json));
+  }
+
+</script>
+
+</html>
